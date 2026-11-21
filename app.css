@@ -1,0 +1,106 @@
+:root {
+  --fondo: #14092F;
+  --navy: #1B1446;
+  --indigo: #24106B;
+  --acento: #FFD23F;
+  --menta: #2BE0B5;
+  --rojo: #FF3D6E;
+  --cian: #2BE3F0;
+  --texto: #FFFFFF;
+  --suave: rgba(255, 255, 255, .72);
+  --tarjeta: #FFFFFF;
+  --tarjeta-texto: #1B1446;
+  --arriba: env(safe-area-inset-top, 0px);
+  --abajo: env(safe-area-inset-bottom, 0px);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; height: 100%; background: var(--fondo); color: var(--texto); font-family: "Baloo 2", system-ui, sans-serif; overflow: hidden; overscroll-behavior: none; }
+button { font: inherit; cursor: pointer; border: 0; }
+
+/* ---------- barra superior y chips ---------- */
+.barra { position: fixed; z-index: 5; top: 0; left: 0; right: 0; padding: calc(var(--arriba) + 8px) 16px 0; display: flex; align-items: center; justify-content: space-between; pointer-events: none; }
+.barra > * { pointer-events: auto; }
+.marca { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 22px; text-shadow: 0 2px 8px rgba(0,0,0,.5); }
+.marca img { width: 32px; height: 32px; border-radius: 9px; }
+.marca b { color: var(--acento); }
+.btn-redondo { width: 42px; height: 42px; border-radius: 50%; background: rgba(27, 20, 70, .7); color: #fff; font-size: 19px; backdrop-filter: blur(8px); display: grid; place-items: center; }
+.chips { position: fixed; z-index: 5; top: calc(var(--arriba) + 58px); left: 0; right: 0; display: flex; gap: 8px; overflow-x: auto; padding: 0 16px 8px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; padding: 5px 14px 6px; border-radius: 999px; background: rgba(27, 20, 70, .72); color: #fff; font-weight: 800; font-size: 15px; backdrop-filter: blur(8px); white-space: nowrap; }
+.chip[aria-pressed="true"] { background: var(--acento); color: var(--navy); }
+
+/* ---------- feed vertical ---------- */
+.feed { height: 100dvh; overflow-y: scroll; scroll-snap-type: y mandatory; scrollbar-width: none; }
+.feed::-webkit-scrollbar { display: none; }
+.reel { position: relative; height: 100dvh; scroll-snap-align: start; scroll-snap-stop: always; display: grid; place-items: center; background: var(--indigo); overflow: hidden; }
+.reel video { width: 100%; height: 100%; object-fit: contain; background: #000; }
+@media (min-aspect-ratio: 9/16) { .reel video { object-fit: contain; } }
+@media (max-aspect-ratio: 9/16) { .reel video { object-fit: cover; } }
+.reel .progreso { position: absolute; top: 0; left: 0; height: 4px; background: var(--acento); width: 0; z-index: 2; }
+.reel .pausa { position: absolute; inset: 0; display: grid; place-items: center; font-size: 72px; opacity: 0; transition: opacity .2s; pointer-events: none; text-shadow: 0 4px 20px rgba(0,0,0,.6); }
+.reel.pausado .pausa { opacity: .9; }
+.lateral { position: absolute; right: 12px; bottom: calc(var(--abajo) + 120px); display: flex; flex-direction: column; gap: 14px; z-index: 3; }
+.lateral button { width: 52px; height: 52px; border-radius: 50%; background: rgba(27, 20, 70, .72); color: #fff; font-weight: 800; font-size: 17px; backdrop-filter: blur(8px); display: grid; place-items: center; }
+.lateral button.hecho { background: var(--menta); color: var(--navy); }
+.pie-reel { position: absolute; left: 16px; right: 80px; bottom: calc(var(--abajo) + 22px); z-index: 3; text-shadow: 0 2px 10px rgba(0,0,0,.7); }
+.pie-reel .tema { font-size: 14px; font-weight: 800; color: var(--acento); }
+.pie-reel .titulo { font-size: 20px; font-weight: 800; line-height: 1.15; }
+
+/* tarjeta de reel que aún no está hecho */
+.reel.pronto { background: radial-gradient(circle at 50% 40%, #3A2A9A, var(--indigo) 70%); text-align: center; padding: 24px; }
+.pronto-caja { max-width: 420px; }
+.pronto-caja .n { font-size: 15px; color: var(--acento); font-weight: 800; }
+.pronto-caja h2 { font-size: 30px; line-height: 1.1; margin: 8px 0 12px; }
+.pronto-caja p { color: var(--suave); margin: 0; }
+
+/* ---------- portada ---------- */
+.portada { position: fixed; inset: 0; z-index: 20; background: radial-gradient(circle at 50% 35%, #3A2A9A, var(--fondo) 75%); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 24px; }
+.portada-logo { width: 150px; height: 150px; border-radius: 36px; box-shadow: 0 14px 40px rgba(0,0,0,.4); }
+.portada h1 { font-size: 46px; margin: 18px 0 4px; }
+.portada h1 b { color: var(--acento); }
+.portada p { color: var(--suave); font-size: 18px; max-width: 340px; margin: 0 0 22px; line-height: 1.3; }
+.portada .pista { font-size: 14px; margin-top: 18px; }
+.btn-grande { background: var(--acento); color: var(--navy); font-weight: 800; font-size: 22px; padding: 10px 34px 12px; border-radius: 999px; box-shadow: 0 6px 0 #C79A00; }
+.btn-grande.peq { font-size: 18px; padding: 8px 22px 10px; box-shadow: 0 4px 0 #C79A00; }
+.btn-grande:active { transform: translateY(3px); box-shadow: 0 3px 0 #C79A00; }
+.btn-sec { background: transparent; color: var(--tarjeta-texto); font-weight: 800; font-size: 16px; padding: 8px 10px; }
+.btn-sec.ancho { width: 100%; margin-top: 16px; color: #C1123F; }
+
+/* ---------- hojas (quiz y progreso) ---------- */
+.hoja { position: fixed; inset: 0; z-index: 15; background: rgba(10, 5, 30, .55); display: flex; align-items: flex-end; justify-content: center; backdrop-filter: blur(3px); }
+.hoja[hidden] { display: none; }
+.hoja-caja { width: 100%; max-width: 520px; background: var(--tarjeta); color: var(--tarjeta-texto); border-radius: 28px 28px 0 0; padding: 20px 18px calc(var(--abajo) + 18px); animation: sube .28s ease-out; max-height: 92dvh; overflow-y: auto; }
+.hoja-caja.alta { min-height: 70dvh; }
+@keyframes sube { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+.quiz-cab { display: inline-block; background: var(--navy); color: var(--acento); font-weight: 800; font-size: 14px; padding: 2px 12px 3px; border-radius: 999px; }
+.hoja h2 { font-size: 21px; line-height: 1.2; margin: 10px 0 14px; }
+.opciones { display: grid; gap: 10px; }
+.opcion { text-align: left; background: #F1F3FF; color: var(--tarjeta-texto); font-weight: 600; font-size: 17px; padding: 11px 14px; border-radius: 16px; border: 3px solid transparent; }
+.opcion.bien { background: #D6FBEF; border-color: #0FAE83; }
+.opcion.mal { background: #FFE0E8; border-color: var(--rojo); }
+.opcion:disabled { cursor: default; }
+.explicacion { background: #FFF6D6; border-radius: 14px; padding: 10px 12px; margin: 14px 0 0; font-size: 16px; line-height: 1.3; }
+.quiz-pie { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; gap: 10px; }
+.quiz-pie.arriba { margin: 0 0 6px; }
+.quiz-pie.arriba h2 { margin: 0; }
+.quiz-pie .btn-redondo { background: #F1F3FF; color: var(--tarjeta-texto); }
+
+/* progreso */
+.resumen-global { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 8px 0 14px; }
+.cifra { background: #F1F3FF; border-radius: 16px; padding: 8px; text-align: center; }
+.cifra b { display: block; font-size: 26px; line-height: 1.1; }
+.cifra span { font-size: 13px; color: #5A5683; }
+.tema-fila { padding: 10px 0; border-top: 1px solid #E6E8F5; }
+.tema-fila .cab { display: flex; justify-content: space-between; font-weight: 800; font-size: 16px; }
+.tema-fila .cab span { color: #5A5683; font-weight: 600; font-size: 14px; }
+.barra-p { height: 8px; background: #E6E8F5; border-radius: 99px; margin-top: 6px; overflow: hidden; }
+.barra-p i { display: block; height: 100%; background: var(--menta); border-radius: 99px; }
+.lista-reels { margin: 6px 0 0; padding: 0; list-style: none; font-size: 14px; color: #5A5683; }
+.lista-reels li { padding: 2px 0; display: flex; gap: 6px; }
+.lista-reels li.si { color: var(--tarjeta-texto); }
+.lista-reels button { background: none; padding: 0; color: inherit; text-align: left; font: inherit; }
+
+.aviso { position: fixed; z-index: 30; left: 50%; bottom: calc(var(--abajo) + 90px); transform: translateX(-50%); background: var(--navy); color: #fff; padding: 8px 16px; border-radius: 999px; font-weight: 800; box-shadow: 0 6px 20px rgba(0,0,0,.4); }
+@media (min-width: 700px) { .reel video { max-width: 56.25dvh; } }
+[hidden] { display: none !important; }

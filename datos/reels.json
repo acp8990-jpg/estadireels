@@ -1,0 +1,392 @@
+{
+ "temas": {
+  "1": "Estadística descriptiva",
+  "2": "Probabilidad",
+  "3": "Epidemiología",
+  "4": "Muestreo",
+  "5": "Inferencia",
+  "6": "Contraste de hipótesis",
+  "7": "Regresión y correlación",
+  "8": "Supervivencia"
+ },
+ "reels": [
+  {
+   "n": 1,
+   "tema": 1,
+   "titulo": "Población vs muestra",
+   "id": "r01",
+   "disponible": false
+  },
+  {
+   "n": 2,
+   "tema": 1,
+   "titulo": "Tipos de variables",
+   "id": "r02",
+   "disponible": false
+  },
+  {
+   "n": 3,
+   "tema": 1,
+   "titulo": "Tablas de frecuencias",
+   "id": "r03",
+   "disponible": false
+  },
+  {
+   "n": 4,
+   "tema": 1,
+   "titulo": "Datos agrupados: regla de Sturges",
+   "id": "r04",
+   "disponible": false
+  },
+  {
+   "n": 5,
+   "tema": 1,
+   "titulo": "¿Qué gráfico uso?",
+   "id": "r05",
+   "disponible": false
+  },
+  {
+   "n": 6,
+   "tema": 1,
+   "titulo": "Media, mediana y moda",
+   "id": "t1-media-mediana",
+   "disponible": true,
+   "video": "videos/t1-media-mediana.mp4",
+   "poster": "videos/t1-media-mediana.jpg",
+   "duracion": 36.5,
+   "quiz": {
+    "pregunta": "Estancias hospitalarias (días): 2, 3, 3, 4, 40. ¿Qué medida describe mejor la estancia típica?",
+    "opciones": [
+     "La media (10,4 días)",
+     "La mediana (3 días)",
+     "El rango",
+     "La varianza"
+    ],
+    "correcta": 1,
+    "explicacion": "El 40 es un valor atípico que arrastra a la media. La mediana (3) no se deja arrastrar."
+   }
+  },
+  {
+   "n": 7,
+   "tema": 1,
+   "titulo": "Percentiles, cuartiles y box-plot",
+   "id": "r07",
+   "disponible": false
+  },
+  {
+   "n": 8,
+   "tema": 1,
+   "titulo": "Varianza, desviación típica y CV",
+   "id": "r08",
+   "disponible": false
+  },
+  {
+   "n": 9,
+   "tema": 1,
+   "titulo": "Asimetría y curtosis",
+   "id": "r09",
+   "disponible": false
+  },
+  {
+   "n": 10,
+   "tema": 2,
+   "titulo": "Experimento aleatorio y sucesos",
+   "id": "r10",
+   "disponible": false
+  },
+  {
+   "n": 11,
+   "tema": 2,
+   "titulo": "Axiomas de Kolmogorov",
+   "id": "r11",
+   "disponible": false
+  },
+  {
+   "n": 12,
+   "tema": 2,
+   "titulo": "Probabilidad condicionada e independencia",
+   "id": "r12",
+   "disponible": false
+  },
+  {
+   "n": 13,
+   "tema": 2,
+   "titulo": "Probabilidad total y regla del producto",
+   "id": "r13",
+   "disponible": false
+  },
+  {
+   "n": 14,
+   "tema": 2,
+   "titulo": "Teorema de Bayes: el positivo engañoso",
+   "id": "t2-bayes",
+   "disponible": true,
+   "video": "videos/t2-bayes.mp4",
+   "poster": "videos/t2-bayes.jpg",
+   "duracion": 42.7,
+   "quiz": {
+    "pregunta": "Prevalencia 2 %, sensibilidad 90 %, falsos positivos en sanos 5 %. Si das positivo, ¿qué probabilidad hay de estar enfermo?",
+    "opciones": [
+     "90 %",
+     "≈ 27 %",
+     "5 %",
+     "98 %"
+    ],
+    "correcta": 1,
+    "explicacion": "P(TB|+) = 0,018 / 0,067 ≈ 0,27. Con una enfermedad rara, la mayoría de positivos son falsos."
+   }
+  },
+  {
+   "n": 15,
+   "tema": 3,
+   "titulo": "Prevalencia vs incidencia",
+   "id": "r15",
+   "disponible": false
+  },
+  {
+   "n": 16,
+   "tema": 3,
+   "titulo": "Cómo leer una tabla 2×2",
+   "id": "r16",
+   "disponible": false
+  },
+  {
+   "n": 17,
+   "tema": 3,
+   "titulo": "Riesgo relativo (RR)",
+   "id": "r17",
+   "disponible": false
+  },
+  {
+   "n": 18,
+   "tema": 3,
+   "titulo": "Odds ratio (OR)",
+   "id": "r18",
+   "disponible": false
+  },
+  {
+   "n": 19,
+   "tema": 3,
+   "titulo": "Riesgo y fracción atribuible",
+   "id": "r19",
+   "disponible": false
+  },
+  {
+   "n": 20,
+   "tema": 3,
+   "titulo": "Sensibilidad y especificidad",
+   "id": "r20",
+   "disponible": false
+  },
+  {
+   "n": 21,
+   "tema": 3,
+   "titulo": "VPP, VPN y prevalencia",
+   "id": "r21",
+   "disponible": false
+  },
+  {
+   "n": 22,
+   "tema": 3,
+   "titulo": "Curva ROC, AUC y Youden",
+   "id": "r22",
+   "disponible": false
+  },
+  {
+   "n": 23,
+   "tema": 4,
+   "titulo": "Por qué muestrear: representatividad y sesgo",
+   "id": "r23",
+   "disponible": false
+  },
+  {
+   "n": 24,
+   "tema": 4,
+   "titulo": "Tamaño muestral para una proporción",
+   "id": "r24",
+   "disponible": false
+  },
+  {
+   "n": 25,
+   "tema": 4,
+   "titulo": "Población finita y no respuesta",
+   "id": "r25",
+   "disponible": false
+  },
+  {
+   "n": 26,
+   "tema": 4,
+   "titulo": "Muestreo probabilístico",
+   "id": "r26",
+   "disponible": false
+  },
+  {
+   "n": 27,
+   "tema": 4,
+   "titulo": "Muestreo no probabilístico",
+   "id": "r27",
+   "disponible": false
+  },
+  {
+   "n": 28,
+   "tema": 5,
+   "titulo": "La normal y la regla 68-95-99,7",
+   "id": "r28",
+   "disponible": false
+  },
+  {
+   "n": 29,
+   "tema": 5,
+   "titulo": "Parámetro vs estimador",
+   "id": "r29",
+   "disponible": false
+  },
+  {
+   "n": 30,
+   "tema": 5,
+   "titulo": "Estimación puntual vs por intervalo",
+   "id": "r30",
+   "disponible": false
+  },
+  {
+   "n": 31,
+   "tema": 5,
+   "titulo": "Teorema Central del Límite",
+   "id": "r31",
+   "disponible": false
+  },
+  {
+   "n": 32,
+   "tema": 5,
+   "titulo": "Error estándar",
+   "id": "r32",
+   "disponible": false
+  },
+  {
+   "n": 33,
+   "tema": 5,
+   "titulo": "Intervalo de confianza: qué significa el 95 %",
+   "id": "r33",
+   "disponible": false
+  },
+  {
+   "n": 34,
+   "tema": 5,
+   "titulo": "Muestras pequeñas: t de Student",
+   "id": "r34",
+   "disponible": false
+  },
+  {
+   "n": 35,
+   "tema": 6,
+   "titulo": "H0 y H1: el juicio a la hipótesis nula",
+   "id": "r35",
+   "disponible": false
+  },
+  {
+   "n": 36,
+   "tema": 6,
+   "titulo": "Errores tipo I y II",
+   "id": "r36",
+   "disponible": false
+  },
+  {
+   "n": 37,
+   "tema": 6,
+   "titulo": "El valor p sin misterio",
+   "id": "t6-valor-p",
+   "disponible": true,
+   "video": "videos/t6-valor-p.mp4",
+   "poster": "videos/t6-valor-p.jpg",
+   "duracion": 44.9,
+   "quiz": {
+    "pregunta": "Un ensayo obtiene p = 0,03 con α = 0,05. ¿Qué concluyes?",
+    "opciones": [
+     "H₀ es cierta con un 97 %",
+     "Se rechaza H₀: diferencia significativa",
+     "No se rechaza H₀",
+     "El tratamiento funciona seguro"
+    ],
+    "correcta": 1,
+    "explicacion": "p < α → se rechaza H₀. Pero p no es la probabilidad de que H₀ sea cierta, ni prueba que el efecto sea grande."
+   }
+  },
+  {
+   "n": 38,
+   "tema": 6,
+   "titulo": "Uni vs bilateral, normalidad y Levene",
+   "id": "r38",
+   "disponible": false
+  },
+  {
+   "n": 39,
+   "tema": 6,
+   "titulo": "t de Student: una muestra, independientes, pareadas",
+   "id": "r39",
+   "disponible": false
+  },
+  {
+   "n": 40,
+   "tema": 6,
+   "titulo": "ANOVA",
+   "id": "r40",
+   "disponible": false
+  },
+  {
+   "n": 41,
+   "tema": 6,
+   "titulo": "Chi-cuadrado, Fisher y McNemar",
+   "id": "r41",
+   "disponible": false
+  },
+  {
+   "n": 42,
+   "tema": 6,
+   "titulo": "Paramétricas vs no paramétricas y tamaño del efecto",
+   "id": "r42",
+   "disponible": false
+  },
+  {
+   "n": 43,
+   "tema": 7,
+   "titulo": "Diagrama de dispersión y covarianza",
+   "id": "r43",
+   "disponible": false
+  },
+  {
+   "n": 44,
+   "tema": 7,
+   "titulo": "Pearson vs Spearman",
+   "id": "r44",
+   "disponible": false
+  },
+  {
+   "n": 45,
+   "tema": 7,
+   "titulo": "Recta de regresión",
+   "id": "r45",
+   "disponible": false
+  },
+  {
+   "n": 46,
+   "tema": 7,
+   "titulo": "R²: cuánto explica el modelo",
+   "id": "r46",
+   "disponible": false
+  },
+  {
+   "n": 47,
+   "tema": 8,
+   "titulo": "Censura y Kaplan-Meier",
+   "id": "r47",
+   "disponible": false
+  },
+  {
+   "n": 48,
+   "tema": 8,
+   "titulo": "Log-rank, Cox y Hazard Ratio",
+   "id": "r48",
+   "disponible": false
+  }
+ ]
+}

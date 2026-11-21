@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>EstadíReels</title>
+  <meta name="description" content="Reels de 1 minuto para estudiar Bioestadística (Grado en Enfermería).">
+  <meta name="theme-color" content="#1B1446">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="EstadíReels">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="iconos/icono-192.png">
+  <link rel="apple-touch-icon" href="iconos/icono-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="marca"><img src="iconos/icono-192.png" alt=""><span>Estadí<b>Reels</b></span></div>
+    <button class="btn-redondo" id="btn-progreso" aria-label="Mi progreso">📊</button>
+  </header>
+  <nav class="chips" id="chips" aria-label="Temas"></nav>
+
+  <main class="feed" id="feed"></main>
+
+  <!-- pantalla de bienvenida: el primer toque desbloquea el sonido -->
+  <section class="portada" id="portada">
+    <img class="portada-logo" src="iconos/icono-512.png" alt="">
+    <h1>Estadí<b>Reels</b></h1>
+    <p>Bioestadística en vídeos de 1 minuto.<br>Mira, responde la pregunta y repasa tus fallos.</p>
+    <button class="btn-grande" id="btn-empezar">Empezar ▶</button>
+    <p class="pista" id="pista-instalar"></p>
+  </section>
+
+  <!-- pregunta tipo test al acabar cada reel -->
+  <section class="hoja" id="quiz" hidden>
+    <div class="hoja-caja">
+      <div class="quiz-cab">Pregunta de repaso</div>
+      <h2 id="quiz-pregunta"></h2>
+      <div class="opciones" id="quiz-opciones"></div>
+      <p class="explicacion" id="quiz-explicacion" hidden></p>
+      <div class="quiz-pie">
+        <button class="btn-sec" id="quiz-repetir">↺ Ver otra vez</button>
+        <button class="btn-grande peq" id="quiz-siguiente">Siguiente ↓</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- progreso y temario -->
+  <section class="hoja" id="progreso" hidden>
+    <div class="hoja-caja alta">
+      <div class="quiz-pie arriba"><h2>Mi progreso</h2><button class="btn-redondo" id="cerrar-progreso" aria-label="Cerrar">✕</button></div>
+      <div id="resumen-global" class="resumen-global"></div>
+      <div id="lista-temas"></div>
+      <button class="btn-sec ancho" id="borrar-progreso">Borrar mi progreso</button>
+    </div>
+  </section>
+
+  <div class="aviso" id="aviso" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>

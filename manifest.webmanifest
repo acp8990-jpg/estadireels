@@ -1,0 +1,17 @@
+{
+  "name": "EstadíReels · Bioestadística en 1 minuto",
+  "short_name": "EstadíReels",
+  "description": "Reels de 1 minuto para estudiar Bioestadística (Grado en Enfermería).",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#14092F",
+  "theme_color": "#1B1446",
+  "icons": [
+    { "src": "iconos/icono-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "iconos/icono-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "iconos/icono-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

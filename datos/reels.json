@@ -202,30 +202,86 @@
   {
    "n": 10,
    "tema": 2,
-   "titulo": "Experimento aleatorio y sucesos",
-   "id": "r10",
-   "disponible": false
+   "titulo": "Experimento aleatorio, espacio muestral y sucesos",
+   "id": "t2-sucesos",
+   "disponible": true,
+   "video": "videos/t2-sucesos.mp4",
+   "poster": "videos/t2-sucesos.jpg",
+   "duracion": 46.0,
+   "quiz": {
+    "pregunta": "Al lanzar un dado, A = «sacar par» y B = «sacar un 5». A y B son…",
+    "opciones": [
+     "Independientes",
+     "Incompatibles",
+     "Complementarios",
+     "El mismo suceso"
+    ],
+    "correcta": 1,
+    "explicacion": "No pueden ocurrir a la vez (A ∩ B = ∅): son incompatibles. No son complementarios porque faltan el 1 y el 3."
+   }
   },
   {
    "n": 11,
    "tema": 2,
-   "titulo": "Axiomas de Kolmogorov",
-   "id": "r11",
-   "disponible": false
+   "titulo": "Axiomas de Kolmogorov y reglas básicas",
+   "id": "t2-kolmogorov",
+   "disponible": true,
+   "video": "videos/t2-kolmogorov.mp4",
+   "poster": "videos/t2-kolmogorov.jpg",
+   "duracion": 49.6,
+   "quiz": {
+    "pregunta": "P(A) = 0,4; P(B) = 0,3 y P(A ∩ B) = 0,1. ¿Cuánto vale P(A ∪ B)?",
+    "opciones": [
+     "0,7",
+     "0,6",
+     "0,12",
+     "0,1"
+    ],
+    "correcta": 1,
+    "explicacion": "P(A ∪ B) = 0,4 + 0,3 − 0,1 = 0,6. Sin restar la intersección, la contarías dos veces."
+   }
   },
   {
    "n": 12,
    "tema": 2,
    "titulo": "Probabilidad condicionada e independencia",
-   "id": "r12",
-   "disponible": false
+   "id": "t2-condicionada",
+   "disponible": true,
+   "video": "videos/t2-condicionada.mp4",
+   "poster": "videos/t2-condicionada.jpg",
+   "duracion": 38.4,
+   "quiz": {
+    "pregunta": "De 200 pacientes, 80 fuman y 24 de ellos tienen EPOC. ¿Cuánto vale P(EPOC | fuma)?",
+    "opciones": [
+     "24/200 = 12 %",
+     "24/80 = 30 %",
+     "80/200 = 40 %",
+     "24/36 = 67 %"
+    ],
+    "correcta": 1,
+    "explicacion": "Condicionar a «fuma» reduce el total a los 80 fumadores: 24/80 = 0,30."
+   }
   },
   {
    "n": 13,
    "tema": 2,
-   "titulo": "Probabilidad total y regla del producto",
-   "id": "r13",
-   "disponible": false
+   "titulo": "Regla del producto y probabilidad total",
+   "id": "t2-total-producto",
+   "disponible": true,
+   "video": "videos/t2-total-producto.mp4",
+   "poster": "videos/t2-total-producto.jpg",
+   "duracion": 48.4,
+   "quiz": {
+    "pregunta": "El 60 % de pacientes está en la planta A (infección 5 %) y el 40 % en la B (infección 10 %). ¿P(infección)?",
+    "opciones": [
+     "7,5 %",
+     "7 %",
+     "15 %",
+     "5 %"
+    ],
+    "correcta": 1,
+    "explicacion": "Probabilidad total: 0,6 · 0,05 + 0,4 · 0,10 = 0,03 + 0,04 = 0,07."
+   }
   },
   {
    "n": 14,

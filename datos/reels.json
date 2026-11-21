@@ -308,57 +308,169 @@
    "n": 15,
    "tema": 3,
    "titulo": "Prevalencia vs incidencia",
-   "id": "r15",
-   "disponible": false
+   "id": "t3-prevalencia",
+   "disponible": true,
+   "video": "videos/t3-prevalencia.mp4",
+   "poster": "videos/t3-prevalencia.jpg",
+   "duracion": 44.2,
+   "quiz": {
+    "pregunta": "Quieres estimar el riesgo de úlceras por presión en pacientes encamados durante 1 mes. ¿Qué mides?",
+    "opciones": [
+     "La prevalencia",
+     "La incidencia acumulada",
+     "La razón de sexos",
+     "La moda"
+    ],
+    "correcta": 1,
+    "explicacion": "El riesgo se mide con casos nuevos en un periodo entre quienes estaban sanos: incidencia acumulada."
+   }
   },
   {
    "n": 16,
    "tema": 3,
    "titulo": "Cómo leer una tabla 2×2",
-   "id": "r16",
-   "disponible": false
+   "id": "t3-tabla2x2",
+   "disponible": true,
+   "video": "videos/t3-tabla2x2.mp4",
+   "poster": "videos/t3-tabla2x2.jpg",
+   "duracion": 39.2,
+   "quiz": {
+    "pregunta": "A = 30, B = 70, C = 10, D = 90. ¿Cuál es el riesgo en expuestos?",
+    "opciones": [
+     "30/200 = 15 %",
+     "30/100 = 30 %",
+     "30/40 = 75 %",
+     "10/100 = 10 %"
+    ],
+    "correcta": 1,
+    "explicacion": "Re = A / (A + B) = 30 / 100 = 0,30. Se calcula dentro de la fila de los expuestos."
+   }
   },
   {
    "n": 17,
    "tema": 3,
    "titulo": "Riesgo relativo (RR)",
-   "id": "r17",
-   "disponible": false
+   "id": "t3-rr",
+   "disponible": true,
+   "video": "videos/t3-rr.mp4",
+   "poster": "videos/t3-rr.jpg",
+   "duracion": 40.8,
+   "quiz": {
+    "pregunta": "Re = 0,30 y Ro = 0,10. ¿Cuánto vale el riesgo relativo?",
+    "opciones": [
+     "0,20",
+     "3",
+     "0,33",
+     "30 %"
+    ],
+    "correcta": 1,
+    "explicacion": "RR = Re / Ro = 0,30 / 0,10 = 3: los expuestos tienen el triple de riesgo."
+   }
   },
   {
    "n": 18,
    "tema": 3,
    "titulo": "Odds ratio (OR)",
-   "id": "r18",
-   "disponible": false
+   "id": "t3-or",
+   "disponible": true,
+   "video": "videos/t3-or.mp4",
+   "poster": "videos/t3-or.jpg",
+   "duracion": 43.4,
+   "quiz": {
+    "pregunta": "A = 30, B = 70, C = 10, D = 90. ¿Cuánto vale la odds ratio?",
+    "opciones": [
+     "3",
+     "3,86",
+     "0,43",
+     "2,7"
+    ],
+    "correcta": 1,
+    "explicacion": "OR = (A · D) / (B · C) = (30 · 90) / (70 · 10) = 2.700 / 700 ≈ 3,86."
+   }
   },
   {
    "n": 19,
    "tema": 3,
    "titulo": "Riesgo y fracción atribuible",
-   "id": "r19",
-   "disponible": false
+   "id": "t3-atribuible",
+   "disponible": true,
+   "video": "videos/t3-atribuible.mp4",
+   "poster": "videos/t3-atribuible.jpg",
+   "duracion": 43.3,
+   "quiz": {
+    "pregunta": "Re = 0,20 y Ro = 0,10. ¿Cuánto vale el riesgo atribuible?",
+    "opciones": [
+     "2",
+     "0,10",
+     "0,50",
+     "0,30"
+    ],
+    "correcta": 1,
+    "explicacion": "RA = Re − Ro = 0,20 − 0,10 = 0,10: diez casos de más por cada 100 expuestos."
+   }
   },
   {
    "n": 20,
    "tema": 3,
    "titulo": "Sensibilidad y especificidad",
-   "id": "r20",
-   "disponible": false
+   "id": "t3-sens-esp",
+   "disponible": true,
+   "video": "videos/t3-sens-esp.mp4",
+   "poster": "videos/t3-sens-esp.jpg",
+   "duracion": 41.6,
+   "quiz": {
+    "pregunta": "Una prueba da positivo en 90 de 100 enfermos y negativo en 160 de 200 sanos. ¿Especificidad?",
+    "opciones": [
+     "90 %",
+     "80 %",
+     "64 %",
+     "16 %"
+    ],
+    "correcta": 1,
+    "explicacion": "Sp = VN / sanos = 160 / 200 = 0,80. La sensibilidad sería 90 / 100 = 90 %."
+   }
   },
   {
    "n": 21,
    "tema": 3,
-   "titulo": "VPP, VPN y prevalencia",
-   "id": "r21",
-   "disponible": false
+   "titulo": "Valores predictivos y prevalencia",
+   "id": "t3-vpp-vpn",
+   "disponible": true,
+   "video": "videos/t3-vpp-vpn.mp4",
+   "poster": "videos/t3-vpp-vpn.jpg",
+   "duracion": 55.4,
+   "quiz": {
+    "pregunta": "Usas la misma prueba en una población con prevalencia mucho más baja. ¿Qué le pasa al VPP?",
+    "opciones": [
+     "Sube",
+     "Baja",
+     "No cambia",
+     "Se iguala a la sensibilidad"
+    ],
+    "correcta": 1,
+    "explicacion": "Con menos enfermos, los falsos positivos pesan más: el VPP baja (y el VPN sube)."
+   }
   },
   {
    "n": 22,
    "tema": 3,
-   "titulo": "Curva ROC, AUC y Youden",
-   "id": "r22",
-   "disponible": false
+   "titulo": "Curva ROC, AUC e índice de Youden",
+   "id": "t3-roc",
+   "disponible": true,
+   "video": "videos/t3-roc.mp4",
+   "poster": "videos/t3-roc.jpg",
+   "duracion": 53.4,
+   "quiz": {
+    "pregunta": "Una prueba tiene un área bajo la curva ROC de 0,52. ¿Qué significa?",
+    "opciones": [
+     "Es excelente",
+     "Casi no discrimina: como tirar una moneda",
+     "Su especificidad es del 52 %",
+     "El mejor corte es 0,52"
+    ],
+    "correcta": 1,
+    "explicacion": "Un AUC cercano a 0,5 equivale a la diagonal: la prueba apenas distingue enfermos de sanos."
+   }
   },
   {
    "n": 23,

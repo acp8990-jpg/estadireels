@@ -13,37 +13,107 @@
   {
    "n": 1,
    "tema": 1,
-   "titulo": "Población vs muestra",
-   "id": "r01",
-   "disponible": false
+   "titulo": "Población, muestra, parámetro y estadístico",
+   "id": "t1-poblacion",
+   "disponible": true,
+   "video": "videos/t1-poblacion.mp4",
+   "poster": "videos/t1-poblacion.jpg",
+   "duracion": 39.8,
+   "quiz": {
+    "pregunta": "En un estudio con 300 pacientes, calculas la edad media de esos 300. Ese valor es…",
+    "opciones": [
+     "Un parámetro",
+     "Un estadístico",
+     "La población",
+     "Una variable cualitativa"
+    ],
+    "correcta": 1,
+    "explicacion": "Se calcula en la muestra: es un estadístico (x̄). El parámetro (μ) sería la media de toda la población."
+   }
   },
   {
    "n": 2,
    "tema": 1,
    "titulo": "Tipos de variables",
-   "id": "r02",
-   "disponible": false
+   "id": "t1-variables",
+   "disponible": true,
+   "video": "videos/t1-variables.mp4",
+   "poster": "videos/t1-variables.jpg",
+   "duracion": 34.1,
+   "quiz": {
+    "pregunta": "«Nivel de dolor: leve, moderado o grave» es una variable…",
+    "opciones": [
+     "Cuantitativa continua",
+     "Cualitativa ordinal",
+     "Cualitativa nominal",
+     "Cuantitativa discreta"
+    ],
+    "correcta": 1,
+    "explicacion": "Son categorías (cualitativa) con un orden natural: ordinal."
+   }
   },
   {
    "n": 3,
    "tema": 1,
    "titulo": "Tablas de frecuencias",
-   "id": "r03",
-   "disponible": false
+   "id": "t1-frecuencias",
+   "disponible": true,
+   "video": "videos/t1-frecuencias.mp4",
+   "poster": "videos/t1-frecuencias.jpg",
+   "duracion": 40.7,
+   "quiz": {
+    "pregunta": "N = 18 y el valor 0 aparece 6 veces. ¿Cuál es su frecuencia relativa?",
+    "opciones": [
+     "6",
+     "0,33",
+     "0,6",
+     "18"
+    ],
+    "correcta": 1,
+    "explicacion": "fi = ni / N = 6 / 18 = 0,33 (un 33 %)."
+   }
   },
   {
    "n": 4,
    "tema": 1,
-   "titulo": "Datos agrupados: regla de Sturges",
-   "id": "r04",
-   "disponible": false
+   "titulo": "Datos agrupados: la regla de Sturges",
+   "id": "t1-sturges",
+   "disponible": true,
+   "video": "videos/t1-sturges.mp4",
+   "poster": "videos/t1-sturges.jpg",
+   "duracion": 45.7,
+   "quiz": {
+    "pregunta": "Con n = 30 datos, ¿cuántos intervalos da la regla de Sturges?",
+    "opciones": [
+     "3",
+     "6",
+     "10",
+     "30"
+    ],
+    "correcta": 1,
+    "explicacion": "k = 1 + 3,3 · log 30 = 5,87 ≈ 6 intervalos."
+   }
   },
   {
    "n": 5,
    "tema": 1,
    "titulo": "¿Qué gráfico uso?",
-   "id": "r05",
-   "disponible": false
+   "id": "t1-graficos",
+   "disponible": true,
+   "video": "videos/t1-graficos.mp4",
+   "poster": "videos/t1-graficos.jpg",
+   "duracion": 33.8,
+   "quiz": {
+    "pregunta": "Tienes el tiempo de cicatrización (en días) de 200 pacientes agrupado en intervalos. ¿Qué gráfico usas?",
+    "opciones": [
+     "Diagrama de barras",
+     "Histograma",
+     "Diagrama de sectores",
+     "Dispersión"
+    ],
+    "correcta": 1,
+    "explicacion": "Variable continua agrupada en intervalos → histograma (barras pegadas)."
+   }
   },
   {
    "n": 6,
@@ -70,22 +140,64 @@
    "n": 7,
    "tema": 1,
    "titulo": "Percentiles, cuartiles y box-plot",
-   "id": "r07",
-   "disponible": false
+   "id": "t1-percentiles",
+   "disponible": true,
+   "video": "videos/t1-percentiles.mp4",
+   "poster": "videos/t1-percentiles.jpg",
+   "duracion": 47.1,
+   "quiz": {
+    "pregunta": "En un box-plot, ¿qué representa la caja?",
+    "opciones": [
+     "El rango completo de los datos",
+     "El 50 % central (de Q1 a Q3)",
+     "La media ± 1 desviación típica",
+     "Los valores atípicos"
+    ],
+    "correcta": 1,
+    "explicacion": "La caja va de Q1 a Q3: contiene el 50 % central. Su anchura es el rango intercuartílico (RIC)."
+   }
   },
   {
    "n": 8,
    "tema": 1,
    "titulo": "Varianza, desviación típica y CV",
-   "id": "r08",
-   "disponible": false
+   "id": "t1-dispersion",
+   "disponible": true,
+   "video": "videos/t1-dispersion.mp4",
+   "poster": "videos/t1-dispersion.jpg",
+   "duracion": 48.7,
+   "quiz": {
+    "pregunta": "Una variable tiene media 50 mg/dL y desviación típica 10 mg/dL. ¿Cuál es su coeficiente de variación?",
+    "opciones": [
+     "5",
+     "20 %",
+     "10 mg/dL",
+     "500 %"
+    ],
+    "correcta": 1,
+    "explicacion": "CV = S / x̄ = 10 / 50 = 0,20 = 20 %. No tiene unidades."
+   }
   },
   {
    "n": 9,
    "tema": 1,
    "titulo": "Asimetría y curtosis",
-   "id": "r09",
-   "disponible": false
+   "id": "t1-forma",
+   "disponible": true,
+   "video": "videos/t1-forma.mp4",
+   "poster": "videos/t1-forma.jpg",
+   "duracion": 38.5,
+   "quiz": {
+    "pregunta": "Los días de ingreso tienen una cola larga a la derecha. ¿Qué esperas?",
+    "opciones": [
+     "media = mediana",
+     "media > mediana",
+     "media < mediana",
+     "No se puede saber"
+    ],
+    "correcta": 1,
+    "explicacion": "Asimetría positiva: los valores grandes arrastran la media hacia la derecha, por encima de la mediana."
+   }
   },
   {
    "n": 10,

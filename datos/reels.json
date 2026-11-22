@@ -582,49 +582,147 @@
    "tema": 5,
    "titulo": "La normal y la regla 68-95-99,7",
    "id": "t5-normal",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t5-normal.mp4",
+   "poster": "videos/t5-normal.jpg",
+   "duracion": 53.9,
+   "quiz": {
+    "pregunta": "La talla al nacer es normal con media 50 cm y σ = 1,5 cm. ¿Entre qué valores está aproximadamente el 95 % de los niños?",
+    "opciones": [
+     "48,5 y 51,5 cm",
+     "47 y 53 cm",
+     "45,5 y 54,5 cm",
+     "49,85 y 50,15 cm"
+    ],
+    "correcta": 1,
+    "explicacion": "95 % ≈ μ ± 2σ = 50 ± 3 cm → entre 47 y 53 cm (exactamente ± 1,96σ = ± 2,94)."
+   }
   },
   {
    "n": 29,
    "tema": 5,
-   "titulo": "Parámetro vs estimador",
+   "titulo": "Parámetro, estimador y sus propiedades",
    "id": "t5-estimador",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t5-estimador.mp4",
+   "poster": "videos/t5-estimador.jpg",
+   "duracion": 36.9,
+   "quiz": {
+    "pregunta": "Para estimar la desviación típica de la población a partir de una muestra, ¿entre qué divides?",
+    "opciones": [
+     "n",
+     "n − 1",
+     "n + 1",
+     "√n"
+    ],
+    "correcta": 1,
+    "explicacion": "La cuasidesviación divide entre n − 1 para que el estimador no quede sesgado."
+   }
   },
   {
    "n": 30,
    "tema": 5,
    "titulo": "Estimación puntual vs por intervalo",
    "id": "t5-puntual-intervalo",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t5-puntual-intervalo.mp4",
+   "poster": "videos/t5-puntual-intervalo.jpg",
+   "duracion": 42.4,
+   "quiz": {
+    "pregunta": "Con los mismos datos pasas de un IC del 95 % a uno del 99 %. El intervalo…",
+    "opciones": [
+     "Se estrecha",
+     "Se ensancha",
+     "No cambia",
+     "Desaparece"
+    ],
+    "correcta": 1,
+    "explicacion": "Más confianza exige un Z mayor (2,58 en vez de 1,96): el intervalo se ensancha."
+   }
   },
   {
    "n": 31,
    "tema": 5,
    "titulo": "Teorema Central del Límite",
    "id": "t5-tcl",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t5-tcl.mp4",
+   "poster": "videos/t5-tcl.jpg",
+   "duracion": 36.6,
+   "quiz": {
+    "pregunta": "Según el Teorema Central del Límite, con n ≥ 30, ¿qué sigue aproximadamente una distribución normal?",
+    "opciones": [
+     "Los datos de la población",
+     "La media muestral",
+     "La varianza",
+     "La moda"
+    ],
+    "correcta": 1,
+    "explicacion": "Las medias de muchas muestras se distribuyen como una normal centrada en μ con dispersión σ/√n."
+   }
   },
   {
    "n": 32,
    "tema": 5,
-   "titulo": "Error estándar",
+   "titulo": "Error estándar de la media y de la proporción",
    "id": "t5-error-estandar",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t5-error-estandar.mp4",
+   "poster": "videos/t5-error-estandar.jpg",
+   "duracion": 46.2,
+   "quiz": {
+    "pregunta": "Si multiplicas por 4 el tamaño de la muestra, el error estándar de la media…",
+    "opciones": [
+     "Se reduce a la cuarta parte",
+     "Se reduce a la mitad",
+     "Se duplica",
+     "No cambia"
+    ],
+    "correcta": 1,
+    "explicacion": "EE = s / √n: con 4n, √(4n) = 2√n, así que el EE se divide entre 2."
+   }
   },
   {
    "n": 33,
    "tema": 5,
    "titulo": "Intervalo de confianza: qué significa el 95 %",
    "id": "t5-ic",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t5-ic.mp4",
+   "poster": "videos/t5-ic.jpg",
+   "duracion": 43.1,
+   "quiz": {
+    "pregunta": "Un estudio da un IC 95 % de 195 a 205 mg/dL para el colesterol medio. ¿Qué significa?",
+    "opciones": [
+     "El 95 % de los pacientes tiene entre 195 y 205",
+     "Con este método, el 95 % de los intervalos contendría la media real",
+     "La media real es 200 seguro",
+     "Hay un 5 % de pacientes fuera de ese rango"
+    ],
+    "correcta": 1,
+    "explicacion": "El 95 % describe el método: si repitiéramos el estudio, 95 de cada 100 intervalos atraparían μ."
+   }
   },
   {
    "n": 34,
    "tema": 5,
-   "titulo": "Muestras pequeñas: t de Student",
+   "titulo": "Muestras pequeñas: la t de Student",
    "id": "t5-t-student",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t5-t-student.mp4",
+   "poster": "videos/t5-t-student.jpg",
+   "duracion": 45.8,
+   "quiz": {
+    "pregunta": "Tienes n = 12 y σ desconocida. ¿Con cuántos grados de libertad buscas la t?",
+    "opciones": [
+     "12",
+     "11",
+     "13",
+     "30"
+    ],
+    "correcta": 1,
+    "explicacion": "gl = n − 1 = 11."
+   }
   },
   {
    "n": 35,

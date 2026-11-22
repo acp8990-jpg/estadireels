@@ -1,11 +1,23 @@
 // EstadíReels · service worker: la app funciona sin conexión y los reels ya vistos se guardan en el móvil.
-const VERSION = "v5";
+const VERSION = "v6";
 const SHELL = `shell-${VERSION}`, VIDEOS = "videos-v2";
 const BASE = ["./", "index.html", "app.css", "app.js", "manifest.webmanifest", "iconos/icono-192.png", "iconos/icono-512.png"];
 
 self.addEventListener("install", (e) => e.waitUntil(caches.open(SHELL).then((c) => c.addAll(BASE)).then(() => self.skipWaiting())));
+// Borra del móvil las copias de vídeos que ya no están en el temario actual (versiones antiguas).
+const limpiarVideos = async () => {
+  try {
+    const d = await (await fetch("datos/reels.json", { cache: "no-cache" })).json();
+    const vale = new Set(d.reels.filter((r) => r.video).map((r) => new URL(r.video, self.registration.scope)).map((u) => u.pathname + u.search));
+    const c = await caches.open(VIDEOS);
+    for (const k of await c.keys()) {
+      const u = new URL(k.url);
+      if (!vale.has(u.pathname + u.search)) await c.delete(k);
+    }
+  } catch { /* sin conexión: ya se limpiará */ }
+};
 self.addEventListener("activate", (e) =>
-  e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => (k.startsWith("shell-") && k !== SHELL) || (k.startsWith("videos-") && k !== VIDEOS)).map((k) => caches.delete(k)))).then(() => self.clients.claim())),
+  e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => (k.startsWith("shell-") && k !== SHELL) || (k.startsWith("videos-") && k !== VIDEOS)).map((k) => caches.delete(k)))).then(() => self.clients.claim()).then(limpiarVideos)),
 );
 
 // Respuesta 206 a partir del vídeo completo guardado (sin conexión; Safari pide los vídeos por rangos).

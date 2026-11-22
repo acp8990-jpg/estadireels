@@ -476,98 +476,168 @@
    "n": 23,
    "tema": 4,
    "titulo": "Por qué muestrear: representatividad y sesgo",
-   "id": "r23",
-   "disponible": false
+   "id": "t4-representatividad",
+   "disponible": true,
+   "video": "videos/t4-representatividad.mp4",
+   "poster": "videos/t4-representatividad.jpg",
+   "duracion": 39.4,
+   "quiz": {
+    "pregunta": "Estudias la satisfacción de los pacientes encuestando solo a los del turno de mañana. ¿Cuál es el problema principal?",
+    "opciones": [
+     "Falta de tamaño",
+     "Sesgo de selección",
+     "Exceso de precisión",
+     "Ninguno"
+    ],
+    "correcta": 1,
+    "explicacion": "Los pacientes de tarde y noche quedan fuera: la muestra no es representativa (sesgo de selección)."
+   }
   },
   {
    "n": 24,
    "tema": 4,
    "titulo": "Tamaño muestral para una proporción",
-   "id": "r24",
-   "disponible": false
+   "id": "t4-tamano-muestral",
+   "disponible": true,
+   "video": "videos/t4-tamano-muestral.mp4",
+   "poster": "videos/t4-tamano-muestral.jpg",
+   "duracion": 40.1,
+   "quiz": {
+    "pregunta": "Z = 1,96, p = 0,5 y E = 0,05. ¿Qué tamaño muestral necesitas (población infinita)?",
+    "opciones": [
+     "96",
+     "384",
+     "1.000",
+     "50"
+    ],
+    "correcta": 1,
+    "explicacion": "n0 = 1,96² · 0,5 · 0,5 / 0,05² = 3,8416 · 0,25 / 0,0025 ≈ 384."
+   }
   },
   {
    "n": 25,
    "tema": 4,
-   "titulo": "Población finita y no respuesta",
-   "id": "r25",
-   "disponible": false
+   "titulo": "Ejercicio: tamaño muestral del burnout",
+   "id": "t4-burnout",
+   "disponible": true,
+   "video": "videos/t4-burnout.mp4",
+   "poster": "videos/t4-burnout.jpg",
+   "duracion": 43.2,
+   "quiz": {
+    "pregunta": "Necesitas 300 respuestas y esperas un 25 % de no respuesta. ¿A cuántas personas invitas?",
+    "opciones": [
+     "375",
+     "400",
+     "325",
+     "300"
+    ],
+    "correcta": 1,
+    "explicacion": "300 / (1 − 0,25) = 300 / 0,75 = 400. Sumar un 25 % (375) se queda corto."
+   }
   },
   {
    "n": 26,
    "tema": 4,
    "titulo": "Muestreo probabilístico",
-   "id": "r26",
-   "disponible": false
+   "id": "t4-probabilistico",
+   "disponible": true,
+   "video": "videos/t4-probabilistico.mp4",
+   "poster": "videos/t4-probabilistico.jpg",
+   "duracion": 43.4,
+   "quiz": {
+    "pregunta": "Eliges al azar 5 centros de salud y encuestas a todos sus pacientes. ¿Qué muestreo es?",
+    "opciones": [
+     "Estratificado",
+     "Por conglomerados",
+     "Sistemático",
+     "Por cuotas"
+    ],
+    "correcta": 1,
+    "explicacion": "Se sortean grupos enteros (centros) y se estudia a todos sus miembros: conglomerados."
+   }
   },
   {
    "n": 27,
    "tema": 4,
    "titulo": "Muestreo no probabilístico",
-   "id": "r27",
-   "disponible": false
+   "id": "t4-no-probabilistico",
+   "disponible": true,
+   "video": "videos/t4-no-probabilistico.mp4",
+   "poster": "videos/t4-no-probabilistico.jpg",
+   "duracion": 35.2,
+   "quiz": {
+    "pregunta": "Reclutas cuidadores de pacientes con Alzheimer pidiendo a cada uno que traiga a otros. ¿Qué muestreo es?",
+    "opciones": [
+     "Por conglomerados",
+     "Bola de nieve",
+     "Aleatorio simple",
+     "Sistemático"
+    ],
+    "correcta": 1,
+    "explicacion": "Los participantes reclutan a otros: bola de nieve, útil para poblaciones difíciles de localizar."
+   }
   },
   {
    "n": 28,
    "tema": 5,
    "titulo": "La normal y la regla 68-95-99,7",
-   "id": "r28",
+   "id": "t5-normal",
    "disponible": false
   },
   {
    "n": 29,
    "tema": 5,
    "titulo": "Parámetro vs estimador",
-   "id": "r29",
+   "id": "t5-estimador",
    "disponible": false
   },
   {
    "n": 30,
    "tema": 5,
    "titulo": "Estimación puntual vs por intervalo",
-   "id": "r30",
+   "id": "t5-puntual-intervalo",
    "disponible": false
   },
   {
    "n": 31,
    "tema": 5,
    "titulo": "Teorema Central del Límite",
-   "id": "r31",
+   "id": "t5-tcl",
    "disponible": false
   },
   {
    "n": 32,
    "tema": 5,
    "titulo": "Error estándar",
-   "id": "r32",
+   "id": "t5-error-estandar",
    "disponible": false
   },
   {
    "n": 33,
    "tema": 5,
    "titulo": "Intervalo de confianza: qué significa el 95 %",
-   "id": "r33",
+   "id": "t5-ic",
    "disponible": false
   },
   {
    "n": 34,
    "tema": 5,
    "titulo": "Muestras pequeñas: t de Student",
-   "id": "r34",
+   "id": "t5-t-student",
    "disponible": false
   },
   {
    "n": 35,
    "tema": 6,
    "titulo": "H0 y H1: el juicio a la hipótesis nula",
-   "id": "r35",
+   "id": "t6-h0-h1",
    "disponible": false
   },
   {
    "n": 36,
    "tema": 6,
    "titulo": "Errores tipo I y II",
-   "id": "r36",
+   "id": "t6-errores",
    "disponible": false
   },
   {
@@ -595,77 +665,77 @@
    "n": 38,
    "tema": 6,
    "titulo": "Uni vs bilateral, normalidad y Levene",
-   "id": "r38",
+   "id": "t6-supuestos",
    "disponible": false
   },
   {
    "n": 39,
    "tema": 6,
    "titulo": "t de Student: una muestra, independientes, pareadas",
-   "id": "r39",
+   "id": "t6-t-test",
    "disponible": false
   },
   {
    "n": 40,
    "tema": 6,
    "titulo": "ANOVA",
-   "id": "r40",
+   "id": "t6-anova",
    "disponible": false
   },
   {
    "n": 41,
    "tema": 6,
    "titulo": "Chi-cuadrado, Fisher y McNemar",
-   "id": "r41",
+   "id": "t6-chi",
    "disponible": false
   },
   {
    "n": 42,
    "tema": 6,
    "titulo": "Paramétricas vs no paramétricas y tamaño del efecto",
-   "id": "r42",
+   "id": "t6-no-parametricas",
    "disponible": false
   },
   {
    "n": 43,
    "tema": 7,
    "titulo": "Diagrama de dispersión y covarianza",
-   "id": "r43",
+   "id": "t7-dispersion",
    "disponible": false
   },
   {
    "n": 44,
    "tema": 7,
    "titulo": "Pearson vs Spearman",
-   "id": "r44",
+   "id": "t7-pearson-spearman",
    "disponible": false
   },
   {
    "n": 45,
    "tema": 7,
    "titulo": "Recta de regresión",
-   "id": "r45",
+   "id": "t7-regresion",
    "disponible": false
   },
   {
    "n": 46,
    "tema": 7,
    "titulo": "R²: cuánto explica el modelo",
-   "id": "r46",
+   "id": "t7-r2",
    "disponible": false
   },
   {
    "n": 47,
    "tema": 8,
    "titulo": "Censura y Kaplan-Meier",
-   "id": "r47",
+   "id": "t8-kaplan-meier",
    "disponible": false
   },
   {
    "n": 48,
    "tema": 8,
    "titulo": "Log-rank, Cox y Hazard Ratio",
-   "id": "r48",
+   "id": "t8-logrank-cox-hr",
    "disponible": false
   }
  ]

@@ -1,5 +1,5 @@
 // EstadíReels · service worker: la app funciona sin conexión y los reels ya vistos se guardan en el móvil.
-const VERSION = "v4";
+const VERSION = "v5";
 const SHELL = `shell-${VERSION}`, VIDEOS = "videos-v2";
 const BASE = ["./", "index.html", "app.css", "app.js", "manifest.webmanifest", "iconos/icono-192.png", "iconos/icono-512.png"];
 
@@ -8,31 +8,53 @@ self.addEventListener("activate", (e) =>
   e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => (k.startsWith("shell-") && k !== SHELL) || (k.startsWith("videos-") && k !== VIDEOS)).map((k) => caches.delete(k)))).then(() => self.clients.claim())),
 );
 
-// Respuesta 206 a partir del vídeo completo guardado (Safari pide los vídeos por rangos).
+// Respuesta 206 a partir del vídeo completo guardado (sin conexión; Safari pide los vídeos por rangos).
 const rango = async (req, res) => {
   const h = req.headers.get("range");
   if (!h) return res;
   const buf = await res.arrayBuffer();
+  const n = buf.byteLength;
   const m = /bytes=(\d*)-(\d*)/.exec(h) || [];
-  const ini = m[1] ? Number(m[1]) : 0, fin = m[2] ? Number(m[2]) : buf.byteLength - 1;
+  let ini, fin;
+  if (!m[1] && m[2]) { ini = Math.max(0, n - Number(m[2])); fin = n - 1; } // «bytes=-N»: los N últimos
+  else { ini = m[1] ? Number(m[1]) : 0; fin = m[2] ? Math.min(Number(m[2]), n - 1) : n - 1; }
+  if (ini >= n) return new Response(null, { status: 416, headers: { "Content-Range": `bytes */${n}` } });
   return new Response(buf.slice(ini, fin + 1), {
     status: 206,
-    headers: { "Content-Type": "video/mp4", "Content-Range": `bytes ${ini}-${fin}/${buf.byteLength}`, "Content-Length": String(fin - ini + 1), "Accept-Ranges": "bytes" },
+    headers: { "Content-Type": "video/mp4", "Content-Range": `bytes ${ini}-${fin}/${n}`, "Content-Length": String(fin - ini + 1), "Accept-Ranges": "bytes" },
   });
+};
+
+// Guarda una copia completa del vídeo para verlo sin conexión y borra las versiones anteriores del mismo reel.
+const enCurso = new Set();
+const guardarVideo = async (url) => {
+  const clave = url.pathname + url.search; // ?v=… cambia cuando se rehace el vídeo
+  if (enCurso.has(clave)) return;
+  enCurso.add(clave);
+  try {
+    const c = await caches.open(VIDEOS);
+    if (await c.match(clave)) return;
+    const r = await fetch(clave);
+    if (!(r.ok && r.status === 200)) return;
+    await c.put(clave, r);
+    for (const k of await c.keys()) {
+      const u = new URL(k.url);
+      if (u.pathname === url.pathname && u.search !== url.search) await c.delete(k);
+    }
+  } catch { /* sin conexión o sin espacio: se intentará otra vez */ } finally { enCurso.delete(clave); }
 };
 
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
   if (url.pathname.endsWith(".mp4")) {
+    // Con conexión el navegador reproduce el vídeo directamente (lo más fiable) y aquí solo se guarda una copia.
+    if (self.navigator.onLine !== false) { e.waitUntil(guardarVideo(url)); return; }
+    // Sin conexión: desde la copia guardada.
     e.respondWith((async () => {
       const c = await caches.open(VIDEOS);
-      const clave = url.pathname + url.search; // ?v=… cambia cuando se rehace el vídeo
-      const guardado = await c.match(clave);
-      if (guardado) return rango(e.request, guardado);
-      // primera vez: se sirve de la red y se descarga entero en segundo plano para la próxima
-      e.waitUntil(fetch(clave).then((r) => (r.ok && r.status === 200 ? c.put(clave, r) : null)).catch(() => {}));
-      return fetch(e.request);
+      const g = (await c.match(url.pathname + url.search)) || (await c.match(url.pathname, { ignoreSearch: true }));
+      return g ? rango(e.request, g) : new Response(null, { status: 504 });
     })());
     return;
   }

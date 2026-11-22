@@ -1,5 +1,5 @@
 // EstadíReels · service worker: la app funciona sin conexión y los reels ya vistos se guardan en el móvil.
-const VERSION = "v3";
+const VERSION = "v4";
 const SHELL = `shell-${VERSION}`, VIDEOS = "videos-v2";
 const BASE = ["./", "index.html", "app.css", "app.js", "manifest.webmanifest", "iconos/icono-192.png", "iconos/icono-512.png"];
 

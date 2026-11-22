@@ -729,14 +729,42 @@
    "tema": 6,
    "titulo": "H0 y H1: el juicio a la hipótesis nula",
    "id": "t6-h0-h1",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t6-h0-h1.mp4",
+   "poster": "videos/t6-h0-h1.jpg",
+   "duracion": 37.4,
+   "quiz": {
+    "pregunta": "Un estudio obtiene p = 0,30. ¿Cuál es la conclusión correcta?",
+    "opciones": [
+     "Se acepta H₀: no hay efecto",
+     "No se rechaza H₀: no hay pruebas suficientes",
+     "Se rechaza H₀",
+     "H₁ es cierta"
+    ],
+    "correcta": 1,
+    "explicacion": "Un p grande no demuestra que H₀ sea cierta: solo que no hay pruebas suficientes para rechazarla."
+   }
   },
   {
    "n": 36,
    "tema": 6,
-   "titulo": "Errores tipo I y II",
+   "titulo": "Errores tipo I y II, y la potencia",
    "id": "t6-errores",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t6-errores.mp4",
+   "poster": "videos/t6-errores.jpg",
+   "duracion": 43.0,
+   "quiz": {
+    "pregunta": "Un ensayo concluye que un fármaco funciona cuando en realidad no funciona. ¿Qué error es?",
+    "opciones": [
+     "Error tipo II",
+     "Error tipo I",
+     "Ninguno",
+     "Falta de potencia"
+    ],
+    "correcta": 1,
+    "explicacion": "Rechazar H₀ (no hay efecto) siendo cierta es un error tipo I: un falso positivo."
+   }
   },
   {
    "n": 37,
@@ -762,79 +790,233 @@
   {
    "n": 38,
    "tema": 6,
-   "titulo": "Uni vs bilateral, normalidad y Levene",
+   "titulo": "Uni o bilateral, normalidad y Levene",
    "id": "t6-supuestos",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t6-supuestos.mp4",
+   "poster": "videos/t6-supuestos.jpg",
+   "duracion": 41.3,
+   "quiz": {
+    "pregunta": "La prueba de Levene da p = 0,62. ¿Qué concluyes?",
+    "opciones": [
+     "Las varianzas son distintas",
+     "Puedes asumir varianzas iguales",
+     "Los datos no son normales",
+     "Hay que usar Chi-cuadrado"
+    ],
+    "correcta": 1,
+    "explicacion": "En Levene, H₀ es «varianzas iguales». Con p > 0,05 no se rechaza: se asume homocedasticidad."
+   }
   },
   {
    "n": 39,
    "tema": 6,
-   "titulo": "t de Student: una muestra, independientes, pareadas",
+   "titulo": "t de Student: una muestra, independientes y pareadas",
    "id": "t6-t-test",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t6-t-test.mp4",
+   "poster": "videos/t6-t-test.jpg",
+   "duracion": 40.6,
+   "quiz": {
+    "pregunta": "Mides la glucemia a 25 diabéticos antes y después de un programa educativo (datos normales). ¿Qué prueba usas?",
+    "opciones": [
+     "t para muestras independientes",
+     "t para muestras pareadas",
+     "Chi-cuadrado",
+     "ANOVA"
+    ],
+    "correcta": 1,
+    "explicacion": "Son las mismas personas medidas dos veces: datos pareados → t para muestras relacionadas."
+   }
   },
   {
    "n": 40,
    "tema": 6,
-   "titulo": "ANOVA",
+   "titulo": "ANOVA: tres o más grupos",
    "id": "t6-anova",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t6-anova.mp4",
+   "poster": "videos/t6-anova.jpg",
+   "duracion": 43.0,
+   "quiz": {
+    "pregunta": "Comparas el tiempo de curación con 4 tipos de apósito (datos normales, varianzas iguales). ¿Qué prueba usas?",
+    "opciones": [
+     "Seis pruebas t",
+     "ANOVA de un factor",
+     "Chi-cuadrado",
+     "t pareada"
+    ],
+    "correcta": 1,
+    "explicacion": "Más de dos grupos independientes con variable cuantitativa → ANOVA. Varias t inflarían el error tipo I."
+   }
   },
   {
    "n": 41,
    "tema": 6,
    "titulo": "Chi-cuadrado, Fisher y McNemar",
    "id": "t6-chi",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t6-chi.mp4",
+   "poster": "videos/t6-chi.jpg",
+   "duracion": 56.7,
+   "quiz": {
+    "pregunta": "En una tabla 2×2, una casilla tiene una frecuencia esperada de 3. ¿Qué prueba usas?",
+    "opciones": [
+     "Chi-cuadrado sin más",
+     "Prueba exacta de Fisher",
+     "t de Student",
+     "McNemar"
+    ],
+    "correcta": 1,
+    "explicacion": "Con frecuencias esperadas menores de 5, la Chi-cuadrado pierde fiabilidad: prueba exacta de Fisher."
+   }
   },
   {
    "n": 42,
    "tema": 6,
-   "titulo": "Paramétricas vs no paramétricas y tamaño del efecto",
+   "titulo": "No paramétricas y tamaño del efecto",
    "id": "t6-no-parametricas",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t6-no-parametricas.mp4",
+   "poster": "videos/t6-no-parametricas.jpg",
+   "duracion": 39.9,
+   "quiz": {
+    "pregunta": "Tienes una escala de dolor ordinal en 3 grupos independientes. ¿Qué prueba usas?",
+    "opciones": [
+     "ANOVA",
+     "Kruskal-Wallis",
+     "t de Student",
+     "Wilcoxon"
+    ],
+    "correcta": 1,
+    "explicacion": "Datos ordinales y más de dos grupos independientes → Kruskal-Wallis (alternativa no paramétrica al ANOVA)."
+   }
   },
   {
    "n": 43,
    "tema": 7,
    "titulo": "Diagrama de dispersión y covarianza",
    "id": "t7-dispersion",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t7-dispersion.mp4",
+   "poster": "videos/t7-dispersion.jpg",
+   "duracion": 39.0,
+   "quiz": {
+    "pregunta": "Al aumentar las sesiones de relajación, disminuye la ansiedad. ¿Cómo será la covarianza?",
+    "opciones": [
+     "Positiva",
+     "Negativa",
+     "Cero",
+     "Mayor que 1"
+    ],
+    "correcta": 1,
+    "explicacion": "Cuando una variable sube y la otra baja, la covarianza es negativa (relación inversa)."
+   }
   },
   {
    "n": 44,
    "tema": 7,
-   "titulo": "Pearson vs Spearman",
+   "titulo": "Pearson vs Spearman (y correlación ≠ causalidad)",
    "id": "t7-pearson-spearman",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t7-pearson-spearman.mp4",
+   "poster": "videos/t7-pearson-spearman.jpg",
+   "duracion": 43.7,
+   "quiz": {
+    "pregunta": "Quieres relacionar una escala de dolor (ordinal) con el nivel de ansiedad. ¿Qué coeficiente usas?",
+    "opciones": [
+     "Pearson",
+     "Spearman",
+     "Covarianza",
+     "R²"
+    ],
+    "correcta": 1,
+    "explicacion": "Con variables ordinales (o relaciones monótonas no lineales) se usa la rho de Spearman."
+   }
   },
   {
    "n": 45,
    "tema": 7,
-   "titulo": "Recta de regresión",
+   "titulo": "Recta de regresión: predecir la glucemia",
    "id": "t7-regresion",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t7-regresion.mp4",
+   "poster": "videos/t7-regresion.jpg",
+   "duracion": 42.4,
+   "quiz": {
+    "pregunta": "Modelo: TAS = 140 − 0,8 · horas de ejercicio semanal. ¿Qué TAS estimas con 5 horas?",
+    "opciones": [
+     "144 mmHg",
+     "136 mmHg",
+     "140 mmHg",
+     "4 mmHg"
+    ],
+    "correcta": 1,
+    "explicacion": "140 − 0,8 · 5 = 140 − 4 = 136 mmHg. La pendiente negativa indica que la TAS baja con el ejercicio."
+   }
   },
   {
    "n": 46,
    "tema": 7,
    "titulo": "R²: cuánto explica el modelo",
    "id": "t7-r2",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t7-r2.mp4",
+   "poster": "videos/t7-r2.jpg",
+   "duracion": 40.8,
+   "quiz": {
+    "pregunta": "Un modelo de regresión tiene R² = 0,40. ¿Qué significa?",
+    "opciones": [
+     "Acierta el 40 % de las veces",
+     "Explica el 40 % de la variabilidad de Y",
+     "La correlación vale 0,40",
+     "El 40 % de los datos son atípicos"
+    ],
+    "correcta": 1,
+    "explicacion": "R² es la proporción de la variabilidad de la variable dependiente explicada por el modelo."
+   }
   },
   {
    "n": 47,
    "tema": 8,
-   "titulo": "Censura y Kaplan-Meier",
+   "titulo": "Censura y curva de Kaplan-Meier",
    "id": "t8-kaplan-meier",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t8-kaplan-meier.mp4",
+   "poster": "videos/t8-kaplan-meier.jpg",
+   "duracion": 54.3,
+   "quiz": {
+    "pregunta": "En una curva de Kaplan-Meier, ¿qué pasa cuando un paciente es censurado?",
+    "opciones": [
+     "La curva baja un escalón",
+     "La curva no baja, pero queda uno menos en riesgo",
+     "Se elimina del estudio desde el principio",
+     "Cuenta como una muerte"
+    ],
+    "correcta": 1,
+    "explicacion": "La censura no es un evento: no modifica S(t), solo reduce el número de pacientes en riesgo a partir de ese momento."
+   }
   },
   {
    "n": 48,
    "tema": 8,
-   "titulo": "Log-rank, Cox y Hazard Ratio",
+   "titulo": "Log-rank, regresión de Cox y hazard ratio",
    "id": "t8-logrank-cox-hr",
-   "disponible": false
+   "disponible": true,
+   "video": "videos/t8-logrank-cox-hr.mp4",
+   "poster": "videos/t8-logrank-cox-hr.jpg",
+   "duracion": 45.7,
+   "quiz": {
+    "pregunta": "Un ensayo obtiene HR = 0,70 para el tratamiento nuevo frente al estándar. ¿Qué significa?",
+    "opciones": [
+     "Aumenta el riesgo un 70 %",
+     "Reduce el riesgo instantáneo del evento en torno a un 30 %",
+     "Sobrevive el 70 %",
+     "No hay diferencia"
+    ],
+    "correcta": 1,
+    "explicacion": "HR < 1: en cada momento, el evento aparece un 30 % más despacio en el grupo del tratamiento nuevo."
+   }
   }
  ]
 }

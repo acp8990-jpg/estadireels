@@ -16,9 +16,9 @@
    "titulo": "Población, muestra, parámetro y estadístico",
    "id": "t1-poblacion",
    "disponible": true,
-   "video": "videos/t1-poblacion.mp4?v=4517201",
-   "poster": "videos/t1-poblacion.jpg?v=4517201",
-   "duracion": 39.8,
+   "video": "videos/t1-poblacion.mp4?v=5556242",
+   "poster": "videos/t1-poblacion.jpg?v=5556242",
+   "duracion": 46.4,
    "quiz": {
     "pregunta": "En un estudio con 300 pacientes, calculas la edad media de esos 300. Ese valor es…",
     "opciones": [
@@ -37,9 +37,9 @@
    "titulo": "Tipos de variables",
    "id": "t1-variables",
    "disponible": true,
-   "video": "videos/t1-variables.mp4?v=3285524",
-   "poster": "videos/t1-variables.jpg?v=3285524",
-   "duracion": 34.1,
+   "video": "videos/t1-variables.mp4?v=4242497",
+   "poster": "videos/t1-variables.jpg?v=4242497",
+   "duracion": 39.7,
    "quiz": {
     "pregunta": "«Nivel de dolor: leve, moderado o grave» es una variable…",
     "opciones": [
@@ -58,9 +58,9 @@
    "titulo": "Tablas de frecuencias",
    "id": "t1-frecuencias",
    "disponible": true,
-   "video": "videos/t1-frecuencias.mp4?v=3109512",
-   "poster": "videos/t1-frecuencias.jpg?v=3109512",
-   "duracion": 40.7,
+   "video": "videos/t1-frecuencias.mp4?v=4279878",
+   "poster": "videos/t1-frecuencias.jpg?v=4279878",
+   "duracion": 47.0,
    "quiz": {
     "pregunta": "N = 18 y el valor 0 aparece 6 veces. ¿Cuál es su frecuencia relativa?",
     "opciones": [
@@ -79,9 +79,9 @@
    "titulo": "Datos agrupados: la regla de Sturges",
    "id": "t1-sturges",
    "disponible": true,
-   "video": "videos/t1-sturges.mp4?v=3475797",
-   "poster": "videos/t1-sturges.jpg?v=3475797",
-   "duracion": 45.7,
+   "video": "videos/t1-sturges.mp4?v=4766039",
+   "poster": "videos/t1-sturges.jpg?v=4766039",
+   "duracion": 53.0,
    "quiz": {
     "pregunta": "Con n = 30 datos, ¿cuántos intervalos da la regla de Sturges?",
     "opciones": [
@@ -100,9 +100,9 @@
    "titulo": "¿Qué gráfico uso?",
    "id": "t1-graficos",
    "disponible": true,
-   "video": "videos/t1-graficos.mp4?v=2963517",
-   "poster": "videos/t1-graficos.jpg?v=2963517",
-   "duracion": 33.8,
+   "video": "videos/t1-graficos.mp4?v=3480012",
+   "poster": "videos/t1-graficos.jpg?v=3480012",
+   "duracion": 39.0,
    "quiz": {
     "pregunta": "Tienes el tiempo de cicatrización (en días) de 200 pacientes agrupado en intervalos. ¿Qué gráfico usas?",
     "opciones": [
@@ -121,9 +121,9 @@
    "titulo": "Media, mediana y moda",
    "id": "t1-media-mediana",
    "disponible": true,
-   "video": "videos/t1-media-mediana.mp4?v=3072762",
-   "poster": "videos/t1-media-mediana.jpg?v=3072762",
-   "duracion": 36.5,
+   "video": "videos/t1-media-mediana.mp4?v=4286661",
+   "poster": "videos/t1-media-mediana.jpg?v=4286661",
+   "duracion": 42.5,
    "quiz": {
     "pregunta": "Estancias hospitalarias (días): 2, 3, 3, 4, 40. ¿Qué medida describe mejor la estancia típica?",
     "opciones": [
@@ -142,9 +142,9 @@
    "titulo": "Percentiles, cuartiles y box-plot",
    "id": "t1-percentiles",
    "disponible": true,
-   "video": "videos/t1-percentiles.mp4?v=3960338",
-   "poster": "videos/t1-percentiles.jpg?v=3960338",
-   "duracion": 47.1,
+   "video": "videos/t1-percentiles.mp4?v=5190760",
+   "poster": "videos/t1-percentiles.jpg?v=5190760",
+   "duracion": 54.4,
    "quiz": {
     "pregunta": "En un box-plot, ¿qué representa la caja?",
     "opciones": [
@@ -163,9 +163,9 @@
    "titulo": "Varianza, desviación típica y CV",
    "id": "t1-dispersion",
    "disponible": true,
-   "video": "videos/t1-dispersion.mp4?v=3999317",
-   "poster": "videos/t1-dispersion.jpg?v=3999317",
-   "duracion": 48.7,
+   "video": "videos/t1-dispersion.mp4?v=4985000",
+   "poster": "videos/t1-dispersion.jpg?v=4985000",
+   "duracion": 56.7,
    "quiz": {
     "pregunta": "Una variable tiene media 50 mg/dL y desviación típica 10 mg/dL. ¿Cuál es su coeficiente de variación?",
     "opciones": [
@@ -184,9 +184,9 @@
    "titulo": "Asimetría y curtosis",
    "id": "t1-forma",
    "disponible": true,
-   "video": "videos/t1-forma.mp4?v=3179749",
-   "poster": "videos/t1-forma.jpg?v=3179749",
-   "duracion": 38.5,
+   "video": "videos/t1-forma.mp4?v=4639371",
+   "poster": "videos/t1-forma.jpg?v=4639371",
+   "duracion": 44.6,
    "quiz": {
     "pregunta": "Los días de ingreso tienen una cola larga a la derecha. ¿Qué esperas?",
     "opciones": [
@@ -205,9 +205,9 @@
    "titulo": "Experimento aleatorio, espacio muestral y sucesos",
    "id": "t2-sucesos",
    "disponible": true,
-   "video": "videos/t2-sucesos.mp4?v=4550702",
-   "poster": "videos/t2-sucesos.jpg?v=4550702",
-   "duracion": 46.0,
+   "video": "videos/t2-sucesos.mp4?v=6333678",
+   "poster": "videos/t2-sucesos.jpg?v=6333678",
+   "duracion": 53.7,
    "quiz": {
     "pregunta": "Al lanzar un dado, A = «sacar par» y B = «sacar un 5». A y B son…",
     "opciones": [
@@ -226,9 +226,9 @@
    "titulo": "Axiomas de Kolmogorov y reglas básicas",
    "id": "t2-kolmogorov",
    "disponible": true,
-   "video": "videos/t2-kolmogorov.mp4?v=3781991",
-   "poster": "videos/t2-kolmogorov.jpg?v=3781991",
-   "duracion": 49.6,
+   "video": "videos/t2-kolmogorov.mp4?v=7916206",
+   "poster": "videos/t2-kolmogorov.jpg?v=7916206",
+   "duracion": 57.5,
    "quiz": {
     "pregunta": "P(A) = 0,4; P(B) = 0,3 y P(A ∩ B) = 0,1. ¿Cuánto vale P(A ∪ B)?",
     "opciones": [
@@ -247,9 +247,9 @@
    "titulo": "Probabilidad condicionada e independencia",
    "id": "t2-condicionada",
    "disponible": true,
-   "video": "videos/t2-condicionada.mp4?v=3396781",
-   "poster": "videos/t2-condicionada.jpg?v=3396781",
-   "duracion": 38.4,
+   "video": "videos/t2-condicionada.mp4?v=4675045",
+   "poster": "videos/t2-condicionada.jpg?v=4675045",
+   "duracion": 44.8,
    "quiz": {
     "pregunta": "De 200 pacientes, 80 fuman y 24 de ellos tienen EPOC. ¿Cuánto vale P(EPOC | fuma)?",
     "opciones": [
@@ -268,9 +268,9 @@
    "titulo": "Regla del producto y probabilidad total",
    "id": "t2-total-producto",
    "disponible": true,
-   "video": "videos/t2-total-producto.mp4?v=4310261",
-   "poster": "videos/t2-total-producto.jpg?v=4310261",
-   "duracion": 48.4,
+   "video": "videos/t2-total-producto.mp4?v=6273900",
+   "poster": "videos/t2-total-producto.jpg?v=6273900",
+   "duracion": 56.3,
    "quiz": {
     "pregunta": "El 60 % de pacientes está en la planta A (infección 5 %) y el 40 % en la B (infección 10 %). ¿P(infección)?",
     "opciones": [
@@ -289,9 +289,9 @@
    "titulo": "Teorema de Bayes: el positivo engañoso",
    "id": "t2-bayes",
    "disponible": true,
-   "video": "videos/t2-bayes.mp4?v=6805491",
-   "poster": "videos/t2-bayes.jpg?v=6805491",
-   "duracion": 42.7,
+   "video": "videos/t2-bayes.mp4?v=6806928",
+   "poster": "videos/t2-bayes.jpg?v=6806928",
+   "duracion": 49.8,
    "quiz": {
     "pregunta": "Prevalencia 2 %, sensibilidad 90 %, falsos positivos en sanos 5 %. Si das positivo, ¿qué probabilidad hay de estar enfermo?",
     "opciones": [
@@ -310,9 +310,9 @@
    "titulo": "Prevalencia vs incidencia",
    "id": "t3-prevalencia",
    "disponible": true,
-   "video": "videos/t3-prevalencia.mp4?v=4158440",
-   "poster": "videos/t3-prevalencia.jpg?v=4158440",
-   "duracion": 44.2,
+   "video": "videos/t3-prevalencia.mp4?v=5193335",
+   "poster": "videos/t3-prevalencia.jpg?v=5193335",
+   "duracion": 51.7,
    "quiz": {
     "pregunta": "Quieres estimar el riesgo de úlceras por presión en pacientes encamados durante 1 mes. ¿Qué mides?",
     "opciones": [
@@ -331,9 +331,9 @@
    "titulo": "Cómo leer una tabla 2×2",
    "id": "t3-tabla2x2",
    "disponible": true,
-   "video": "videos/t3-tabla2x2.mp4?v=3194619",
-   "poster": "videos/t3-tabla2x2.jpg?v=3194619",
-   "duracion": 39.2,
+   "video": "videos/t3-tabla2x2.mp4?v=4072186",
+   "poster": "videos/t3-tabla2x2.jpg?v=4072186",
+   "duracion": 45.6,
    "quiz": {
     "pregunta": "A = 30, B = 70, C = 10, D = 90. ¿Cuál es el riesgo en expuestos?",
     "opciones": [
@@ -352,9 +352,9 @@
    "titulo": "Riesgo relativo (RR)",
    "id": "t3-rr",
    "disponible": true,
-   "video": "videos/t3-rr.mp4?v=3225367",
-   "poster": "videos/t3-rr.jpg?v=3225367",
-   "duracion": 40.8,
+   "video": "videos/t3-rr.mp4?v=4068521",
+   "poster": "videos/t3-rr.jpg?v=4068521",
+   "duracion": 47.3,
    "quiz": {
     "pregunta": "Re = 0,30 y Ro = 0,10. ¿Cuánto vale el riesgo relativo?",
     "opciones": [
@@ -373,9 +373,9 @@
    "titulo": "Odds ratio (OR)",
    "id": "t3-or",
    "disponible": true,
-   "video": "videos/t3-or.mp4?v=3277702",
-   "poster": "videos/t3-or.jpg?v=3277702",
-   "duracion": 43.4,
+   "video": "videos/t3-or.mp4?v=4446879",
+   "poster": "videos/t3-or.jpg?v=4446879",
+   "duracion": 50.6,
    "quiz": {
     "pregunta": "A = 30, B = 70, C = 10, D = 90. ¿Cuánto vale la odds ratio?",
     "opciones": [
@@ -394,9 +394,9 @@
    "titulo": "Riesgo y fracción atribuible",
    "id": "t3-atribuible",
    "disponible": true,
-   "video": "videos/t3-atribuible.mp4?v=3891486",
-   "poster": "videos/t3-atribuible.jpg?v=3891486",
-   "duracion": 43.3,
+   "video": "videos/t3-atribuible.mp4?v=4465268",
+   "poster": "videos/t3-atribuible.jpg?v=4465268",
+   "duracion": 50.4,
    "quiz": {
     "pregunta": "Re = 0,20 y Ro = 0,10. ¿Cuánto vale el riesgo atribuible?",
     "opciones": [
@@ -415,9 +415,9 @@
    "titulo": "Sensibilidad y especificidad",
    "id": "t3-sens-esp",
    "disponible": true,
-   "video": "videos/t3-sens-esp.mp4?v=3457704",
-   "poster": "videos/t3-sens-esp.jpg?v=3457704",
-   "duracion": 41.6,
+   "video": "videos/t3-sens-esp.mp4?v=4534287",
+   "poster": "videos/t3-sens-esp.jpg?v=4534287",
+   "duracion": 48.6,
    "quiz": {
     "pregunta": "Una prueba da positivo en 90 de 100 enfermos y negativo en 160 de 200 sanos. ¿Especificidad?",
     "opciones": [
@@ -436,9 +436,9 @@
    "titulo": "Valores predictivos y prevalencia",
    "id": "t3-vpp-vpn",
    "disponible": true,
-   "video": "videos/t3-vpp-vpn.mp4?v=4249563",
-   "poster": "videos/t3-vpp-vpn.jpg?v=4249563",
-   "duracion": 55.4,
+   "video": "videos/t3-vpp-vpn.mp4?v=5213124",
+   "poster": "videos/t3-vpp-vpn.jpg?v=5213124",
+   "duracion": 64.4,
    "quiz": {
     "pregunta": "Usas la misma prueba en una población con prevalencia mucho más baja. ¿Qué le pasa al VPP?",
     "opciones": [
@@ -457,9 +457,9 @@
    "titulo": "Curva ROC, AUC e índice de Youden",
    "id": "t3-roc",
    "disponible": true,
-   "video": "videos/t3-roc.mp4?v=4356061",
-   "poster": "videos/t3-roc.jpg?v=4356061",
-   "duracion": 53.4,
+   "video": "videos/t3-roc.mp4?v=8673877",
+   "poster": "videos/t3-roc.jpg?v=8673877",
+   "duracion": 61.9,
    "quiz": {
     "pregunta": "Una prueba tiene un área bajo la curva ROC de 0,52. ¿Qué significa?",
     "opciones": [
@@ -478,9 +478,9 @@
    "titulo": "Por qué muestrear: representatividad y sesgo",
    "id": "t4-representatividad",
    "disponible": true,
-   "video": "videos/t4-representatividad.mp4?v=4216910",
-   "poster": "videos/t4-representatividad.jpg?v=4216910",
-   "duracion": 39.4,
+   "video": "videos/t4-representatividad.mp4?v=5195437",
+   "poster": "videos/t4-representatividad.jpg?v=5195437",
+   "duracion": 45.6,
    "quiz": {
     "pregunta": "Estudias la satisfacción de los pacientes encuestando solo a los del turno de mañana. ¿Cuál es el problema principal?",
     "opciones": [
@@ -499,9 +499,9 @@
    "titulo": "Tamaño muestral para una proporción",
    "id": "t4-tamano-muestral",
    "disponible": true,
-   "video": "videos/t4-tamano-muestral.mp4?v=3503475",
-   "poster": "videos/t4-tamano-muestral.jpg?v=3503475",
-   "duracion": 40.1,
+   "video": "videos/t4-tamano-muestral.mp4?v=4053932",
+   "poster": "videos/t4-tamano-muestral.jpg?v=4053932",
+   "duracion": 46.7,
    "quiz": {
     "pregunta": "Z = 1,96, p = 0,5 y E = 0,05. ¿Qué tamaño muestral necesitas (población infinita)?",
     "opciones": [
@@ -520,9 +520,9 @@
    "titulo": "Ejercicio: tamaño muestral del burnout",
    "id": "t4-burnout",
    "disponible": true,
-   "video": "videos/t4-burnout.mp4?v=3297950",
-   "poster": "videos/t4-burnout.jpg?v=3297950",
-   "duracion": 43.2,
+   "video": "videos/t4-burnout.mp4?v=3944851",
+   "poster": "videos/t4-burnout.jpg?v=3944851",
+   "duracion": 49.8,
    "quiz": {
     "pregunta": "Necesitas 300 respuestas y esperas un 25 % de no respuesta. ¿A cuántas personas invitas?",
     "opciones": [
@@ -541,9 +541,9 @@
    "titulo": "Muestreo probabilístico",
    "id": "t4-probabilistico",
    "disponible": true,
-   "video": "videos/t4-probabilistico.mp4?v=4630393",
-   "poster": "videos/t4-probabilistico.jpg?v=4630393",
-   "duracion": 43.4,
+   "video": "videos/t4-probabilistico.mp4?v=5409912",
+   "poster": "videos/t4-probabilistico.jpg?v=5409912",
+   "duracion": 50.1,
    "quiz": {
     "pregunta": "Eliges al azar 5 centros de salud y encuestas a todos sus pacientes. ¿Qué muestreo es?",
     "opciones": [
@@ -562,9 +562,9 @@
    "titulo": "Muestreo no probabilístico",
    "id": "t4-no-probabilistico",
    "disponible": true,
-   "video": "videos/t4-no-probabilistico.mp4?v=3101427",
-   "poster": "videos/t4-no-probabilistico.jpg?v=3101427",
-   "duracion": 35.2,
+   "video": "videos/t4-no-probabilistico.mp4?v=3842980",
+   "poster": "videos/t4-no-probabilistico.jpg?v=3842980",
+   "duracion": 40.5,
    "quiz": {
     "pregunta": "Reclutas cuidadores de pacientes con Alzheimer pidiendo a cada uno que traiga a otros. ¿Qué muestreo es?",
     "opciones": [
@@ -583,9 +583,9 @@
    "titulo": "La normal y la regla 68-95-99,7",
    "id": "t5-normal",
    "disponible": true,
-   "video": "videos/t5-normal.mp4?v=4161283",
-   "poster": "videos/t5-normal.jpg?v=4161283",
-   "duracion": 53.9,
+   "video": "videos/t5-normal.mp4?v=5443805",
+   "poster": "videos/t5-normal.jpg?v=5443805",
+   "duracion": 62.4,
    "quiz": {
     "pregunta": "La talla al nacer es normal con media 50 cm y σ = 1,5 cm. ¿Entre qué valores está aproximadamente el 95 % de los niños?",
     "opciones": [
@@ -604,9 +604,9 @@
    "titulo": "Parámetro, estimador y sus propiedades",
    "id": "t5-estimador",
    "disponible": true,
-   "video": "videos/t5-estimador.mp4?v=3210669",
-   "poster": "videos/t5-estimador.jpg?v=3210669",
-   "duracion": 36.9,
+   "video": "videos/t5-estimador.mp4?v=4188904",
+   "poster": "videos/t5-estimador.jpg?v=4188904",
+   "duracion": 42.8,
    "quiz": {
     "pregunta": "Para estimar la desviación típica de la población a partir de una muestra, ¿entre qué divides?",
     "opciones": [
@@ -625,9 +625,9 @@
    "titulo": "Estimación puntual vs por intervalo",
    "id": "t5-puntual-intervalo",
    "disponible": true,
-   "video": "videos/t5-puntual-intervalo.mp4?v=3457976",
-   "poster": "videos/t5-puntual-intervalo.jpg?v=3457976",
-   "duracion": 42.4,
+   "video": "videos/t5-puntual-intervalo.mp4?v=4143672",
+   "poster": "videos/t5-puntual-intervalo.jpg?v=4143672",
+   "duracion": 49.3,
    "quiz": {
     "pregunta": "Con los mismos datos pasas de un IC del 95 % a uno del 99 %. El intervalo…",
     "opciones": [
@@ -646,9 +646,9 @@
    "titulo": "Teorema Central del Límite",
    "id": "t5-tcl",
    "disponible": true,
-   "video": "videos/t5-tcl.mp4?v=3339053",
-   "poster": "videos/t5-tcl.jpg?v=3339053",
-   "duracion": 36.6,
+   "video": "videos/t5-tcl.mp4?v=4447309",
+   "poster": "videos/t5-tcl.jpg?v=4447309",
+   "duracion": 42.5,
    "quiz": {
     "pregunta": "Según el Teorema Central del Límite, con n ≥ 30, ¿qué sigue aproximadamente una distribución normal?",
     "opciones": [
@@ -667,9 +667,9 @@
    "titulo": "Error estándar de la media y de la proporción",
    "id": "t5-error-estandar",
    "disponible": true,
-   "video": "videos/t5-error-estandar.mp4?v=3544479",
-   "poster": "videos/t5-error-estandar.jpg?v=3544479",
-   "duracion": 46.2,
+   "video": "videos/t5-error-estandar.mp4?v=4343986",
+   "poster": "videos/t5-error-estandar.jpg?v=4343986",
+   "duracion": 53.4,
    "quiz": {
     "pregunta": "Si multiplicas por 4 el tamaño de la muestra, el error estándar de la media…",
     "opciones": [
@@ -688,9 +688,9 @@
    "titulo": "Intervalo de confianza: qué significa el 95 %",
    "id": "t5-ic",
    "disponible": true,
-   "video": "videos/t5-ic.mp4?v=3348812",
-   "poster": "videos/t5-ic.jpg?v=3348812",
-   "duracion": 43.1,
+   "video": "videos/t5-ic.mp4?v=4673088",
+   "poster": "videos/t5-ic.jpg?v=4673088",
+   "duracion": 50.5,
    "quiz": {
     "pregunta": "Un estudio da un IC 95 % de 195 a 205 mg/dL para el colesterol medio. ¿Qué significa?",
     "opciones": [
@@ -709,9 +709,9 @@
    "titulo": "Muestras pequeñas: la t de Student",
    "id": "t5-t-student",
    "disponible": true,
-   "video": "videos/t5-t-student.mp4?v=3356536",
-   "poster": "videos/t5-t-student.jpg?v=3356536",
-   "duracion": 45.8,
+   "video": "videos/t5-t-student.mp4?v=4440708",
+   "poster": "videos/t5-t-student.jpg?v=4440708",
+   "duracion": 53.0,
    "quiz": {
     "pregunta": "Tienes n = 12 y σ desconocida. ¿Con cuántos grados de libertad buscas la t?",
     "opciones": [
@@ -730,9 +730,9 @@
    "titulo": "H0 y H1: el juicio a la hipótesis nula",
    "id": "t6-h0-h1",
    "disponible": true,
-   "video": "videos/t6-h0-h1.mp4?v=3041213",
-   "poster": "videos/t6-h0-h1.jpg?v=3041213",
-   "duracion": 37.4,
+   "video": "videos/t6-h0-h1.mp4?v=4010421",
+   "poster": "videos/t6-h0-h1.jpg?v=4010421",
+   "duracion": 43.6,
    "quiz": {
     "pregunta": "Un estudio obtiene p = 0,30. ¿Cuál es la conclusión correcta?",
     "opciones": [
@@ -751,9 +751,9 @@
    "titulo": "Errores tipo I y II, y la potencia",
    "id": "t6-errores",
    "disponible": true,
-   "video": "videos/t6-errores.mp4?v=3512391",
-   "poster": "videos/t6-errores.jpg?v=3512391",
-   "duracion": 43.0,
+   "video": "videos/t6-errores.mp4?v=4725307",
+   "poster": "videos/t6-errores.jpg?v=4725307",
+   "duracion": 50.3,
    "quiz": {
     "pregunta": "Un ensayo concluye que un fármaco funciona cuando en realidad no funciona. ¿Qué error es?",
     "opciones": [
@@ -772,9 +772,9 @@
    "titulo": "El valor p sin misterio",
    "id": "t6-valor-p",
    "disponible": true,
-   "video": "videos/t6-valor-p.mp4?v=3608952",
-   "poster": "videos/t6-valor-p.jpg?v=3608952",
-   "duracion": 44.9,
+   "video": "videos/t6-valor-p.mp4?v=5020881",
+   "poster": "videos/t6-valor-p.jpg?v=5020881",
+   "duracion": 52.7,
    "quiz": {
     "pregunta": "Un ensayo obtiene p = 0,03 con α = 0,05. ¿Qué concluyes?",
     "opciones": [
@@ -793,9 +793,9 @@
    "titulo": "Uni o bilateral, normalidad y Levene",
    "id": "t6-supuestos",
    "disponible": true,
-   "video": "videos/t6-supuestos.mp4?v=3414825",
-   "poster": "videos/t6-supuestos.jpg?v=3414825",
-   "duracion": 41.3,
+   "video": "videos/t6-supuestos.mp4?v=4338632",
+   "poster": "videos/t6-supuestos.jpg?v=4338632",
+   "duracion": 48.3,
    "quiz": {
     "pregunta": "La prueba de Levene da p = 0,62. ¿Qué concluyes?",
     "opciones": [
@@ -814,9 +814,9 @@
    "titulo": "t de Student: una muestra, independientes y pareadas",
    "id": "t6-t-test",
    "disponible": true,
-   "video": "videos/t6-t-test.mp4?v=3312207",
-   "poster": "videos/t6-t-test.jpg?v=3312207",
-   "duracion": 40.6,
+   "video": "videos/t6-t-test.mp4?v=4546056",
+   "poster": "videos/t6-t-test.jpg?v=4546056",
+   "duracion": 47.1,
    "quiz": {
     "pregunta": "Mides la glucemia a 25 diabéticos antes y después de un programa educativo (datos normales). ¿Qué prueba usas?",
     "opciones": [
@@ -835,9 +835,9 @@
    "titulo": "ANOVA: tres o más grupos",
    "id": "t6-anova",
    "disponible": true,
-   "video": "videos/t6-anova.mp4?v=3573312",
-   "poster": "videos/t6-anova.jpg?v=3573312",
-   "duracion": 43.0,
+   "video": "videos/t6-anova.mp4?v=4427757",
+   "poster": "videos/t6-anova.jpg?v=4427757",
+   "duracion": 49.9,
    "quiz": {
     "pregunta": "Comparas el tiempo de curación con 4 tipos de apósito (datos normales, varianzas iguales). ¿Qué prueba usas?",
     "opciones": [
@@ -856,9 +856,9 @@
    "titulo": "Chi-cuadrado, Fisher y McNemar",
    "id": "t6-chi",
    "disponible": true,
-   "video": "videos/t6-chi.mp4?v=4450165",
-   "poster": "videos/t6-chi.jpg?v=4450165",
-   "duracion": 56.7,
+   "video": "videos/t6-chi.mp4?v=5490630",
+   "poster": "videos/t6-chi.jpg?v=5490630",
+   "duracion": 66.3,
    "quiz": {
     "pregunta": "En una tabla 2×2, una casilla tiene una frecuencia esperada de 3. ¿Qué prueba usas?",
     "opciones": [
@@ -877,9 +877,9 @@
    "titulo": "No paramétricas y tamaño del efecto",
    "id": "t6-no-parametricas",
    "disponible": true,
-   "video": "videos/t6-no-parametricas.mp4?v=3344643",
-   "poster": "videos/t6-no-parametricas.jpg?v=3344643",
-   "duracion": 39.9,
+   "video": "videos/t6-no-parametricas.mp4?v=4515473",
+   "poster": "videos/t6-no-parametricas.jpg?v=4515473",
+   "duracion": 46.7,
    "quiz": {
     "pregunta": "Tienes una escala de dolor ordinal en 3 grupos independientes. ¿Qué prueba usas?",
     "opciones": [
@@ -898,9 +898,9 @@
    "titulo": "Diagrama de dispersión y covarianza",
    "id": "t7-dispersion",
    "disponible": true,
-   "video": "videos/t7-dispersion.mp4?v=2855135",
-   "poster": "videos/t7-dispersion.jpg?v=2855135",
-   "duracion": 39.0,
+   "video": "videos/t7-dispersion.mp4?v=4534579",
+   "poster": "videos/t7-dispersion.jpg?v=4534579",
+   "duracion": 45.6,
    "quiz": {
     "pregunta": "Al aumentar las sesiones de relajación, disminuye la ansiedad. ¿Cómo será la covarianza?",
     "opciones": [
@@ -919,9 +919,9 @@
    "titulo": "Pearson vs Spearman (y correlación ≠ causalidad)",
    "id": "t7-pearson-spearman",
    "disponible": true,
-   "video": "videos/t7-pearson-spearman.mp4?v=3443027",
-   "poster": "videos/t7-pearson-spearman.jpg?v=3443027",
-   "duracion": 43.7,
+   "video": "videos/t7-pearson-spearman.mp4?v=5059413",
+   "poster": "videos/t7-pearson-spearman.jpg?v=5059413",
+   "duracion": 50.4,
    "quiz": {
     "pregunta": "Quieres relacionar una escala de dolor (ordinal) con el nivel de ansiedad. ¿Qué coeficiente usas?",
     "opciones": [
@@ -940,9 +940,9 @@
    "titulo": "Recta de regresión: predecir la glucemia",
    "id": "t7-regresion",
    "disponible": true,
-   "video": "videos/t7-regresion.mp4?v=3366123",
-   "poster": "videos/t7-regresion.jpg?v=3366123",
-   "duracion": 42.4,
+   "video": "videos/t7-regresion.mp4?v=4781387",
+   "poster": "videos/t7-regresion.jpg?v=4781387",
+   "duracion": 49.4,
    "quiz": {
     "pregunta": "Modelo: TAS = 140 − 0,8 · horas de ejercicio semanal. ¿Qué TAS estimas con 5 horas?",
     "opciones": [
@@ -961,9 +961,9 @@
    "titulo": "R²: cuánto explica el modelo",
    "id": "t7-r2",
    "disponible": true,
-   "video": "videos/t7-r2.mp4?v=3481756",
-   "poster": "videos/t7-r2.jpg?v=3481756",
-   "duracion": 40.8,
+   "video": "videos/t7-r2.mp4?v=4424039",
+   "poster": "videos/t7-r2.jpg?v=4424039",
+   "duracion": 47.2,
    "quiz": {
     "pregunta": "Un modelo de regresión tiene R² = 0,40. ¿Qué significa?",
     "opciones": [
@@ -982,9 +982,9 @@
    "titulo": "Censura y curva de Kaplan-Meier",
    "id": "t8-kaplan-meier",
    "disponible": true,
-   "video": "videos/t8-kaplan-meier.mp4?v=4252304",
-   "poster": "videos/t8-kaplan-meier.jpg?v=4252304",
-   "duracion": 54.3,
+   "video": "videos/t8-kaplan-meier.mp4?v=6251785",
+   "poster": "videos/t8-kaplan-meier.jpg?v=6251785",
+   "duracion": 63.1,
    "quiz": {
     "pregunta": "En una curva de Kaplan-Meier, ¿qué pasa cuando un paciente es censurado?",
     "opciones": [
@@ -1003,9 +1003,9 @@
    "titulo": "Log-rank, regresión de Cox y hazard ratio",
    "id": "t8-logrank-cox-hr",
    "disponible": true,
-   "video": "videos/t8-logrank-cox-hr.mp4?v=3836051",
-   "poster": "videos/t8-logrank-cox-hr.jpg?v=3836051",
-   "duracion": 45.7,
+   "video": "videos/t8-logrank-cox-hr.mp4?v=5187226",
+   "poster": "videos/t8-logrank-cox-hr.jpg?v=5187226",
+   "duracion": 53.2,
    "quiz": {
     "pregunta": "Un ensayo obtiene HR = 0,70 para el tratamiento nuevo frente al estándar. ¿Qué significa?",
     "opciones": [

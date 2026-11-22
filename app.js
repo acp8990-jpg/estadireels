@@ -82,8 +82,14 @@
     s.dataset.id = r.id;
     s.innerHTML = `
       <video playsinline preload="none" poster="${r.poster}" data-src="${r.video}"></video>
-      <div class="progreso"></div>
       <div class="pausa">▶</div>
+      <div class="controles">
+        <button class="c-atras" aria-label="Atrás 5 segundos">↺ 5</button>
+        <button class="c-play" aria-label="Pausar o reproducir">❚❚</button>
+        <button class="c-adelante" aria-label="Adelante 5 segundos">5 ↻</button>
+        <input class="c-barra" type="range" min="0" max="100" step="0.1" value="0" aria-label="Avance del vídeo">
+        <span class="c-tiempo">0:00 / 0:00</span>
+      </div>
       <div class="lateral">
         <button class="b-vel" aria-label="Velocidad">${E.vel === 1 ? "1×" : "1,5×"}</button>
         <button class="b-quiz" aria-label="Pregunta de repaso">?</button>
@@ -101,16 +107,44 @@
     };
     marcaQuiz();
     s._marcaQuiz = marcaQuiz;
-    v.addEventListener("timeupdate", () => {
-      if (v.duration) s.querySelector(".progreso").style.width = `${(v.currentTime / v.duration) * 100}%`;
+    const barra = s.querySelector(".c-barra"), tiempo = s.querySelector(".c-tiempo"), bPlay = s.querySelector(".c-play");
+    const mmss = (x) => `${Math.floor(x / 60)}:${String(Math.floor(x % 60)).padStart(2, "0")}`;
+    let arrastrando = false;
+    const pintaBarra = () => {
+      const d = v.duration || r.duracion || 0;
+      if (!arrastrando && d) barra.value = (v.currentTime / d) * 100;
+      barra.style.setProperty("--p", `${barra.value}%`);
+      tiempo.textContent = `${mmss(v.currentTime || 0)} / ${mmss(d)}`;
+    };
+    const pintaPlay = () => { bPlay.textContent = v.paused ? "▶" : "❚❚"; s.classList.toggle("pausado", v.paused); };
+    v.addEventListener("timeupdate", pintaBarra);
+    v.addEventListener("loadedmetadata", pintaBarra);
+    v.addEventListener("play", pintaPlay);
+    v.addEventListener("pause", pintaPlay);
+    const saltar = (dt) => {
+      if (!v.src) cargarVideo(s);
+      const d = v.duration || r.duracion || 0;
+      v.currentTime = Math.max(0, Math.min(d ? d - 0.05 : 0, (v.currentTime || 0) + dt));
+      pintaBarra();
+    };
+    s.querySelector(".c-atras").onclick = (e) => { e.stopPropagation(); saltar(-5); };
+    s.querySelector(".c-adelante").onclick = (e) => { e.stopPropagation(); saltar(5); };
+    bPlay.onclick = (e) => { e.stopPropagation(); if (v.paused) v.play().catch(() => {}); else v.pause(); };
+    barra.addEventListener("pointerdown", () => (arrastrando = true));
+    barra.addEventListener("input", () => {
+      const d = v.duration || r.duracion || 0;
+      if (d) v.currentTime = (barra.value / 100) * d;
+      pintaBarra();
     });
+    barra.addEventListener("change", () => { arrastrando = false; pintaBarra(); });
+    barra.addEventListener("pointerup", () => (arrastrando = false));
     v.addEventListener("ended", () => {
       E.vistos[r.id] = true; guardar();
       abrirQuiz(r, s);
     });
     v.addEventListener("click", () => {
-      if (v.paused) { v.play().catch(() => {}); s.classList.remove("pausado"); }
-      else { v.pause(); s.classList.add("pausado"); }
+      if (v.paused) v.play().catch(() => {});
+      else v.pause();
     });
     s.querySelector(".b-vel").onclick = () => {
       E.vel = E.vel === 1 ? 1.5 : 1; guardar();
